@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerCam : MonoBehaviour
 {
-    public float senX;
-    public float senY;
+    public float sensX;
+    public float sensY;
 
     public Transform orientation;
 
@@ -21,8 +21,8 @@ public class PlayerCam : MonoBehaviour
     private void Update()
     {
         // hiiren input
-        float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * senX;
-        float mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * senY;
+        float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * sensX;
+        float mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * sensY;
 
         // tällä unityn pitäs osata rotate systeemiä
         yRotation += mouseX;
