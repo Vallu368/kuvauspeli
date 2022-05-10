@@ -5,8 +5,11 @@ using UnityEngine.UI;
 
 public class TakePhoto : MonoBehaviour
 {
-    [SerializeField] private Image pictureDisplayArea;
+    [SerializeField] private Image photoDisplayArea;
+    [SerializeField] private GameObject photoFrame;
+
     private Texture2D screenCapture;
+    private bool viewingPhoto;
 
     private void Start()
     {
@@ -17,24 +20,41 @@ public class TakePhoto : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-            StartCoroutine(CapturePicture());
+            if(!viewingPhoto)
+            {
+                StartCoroutine(CapturePhoto());
+            }
+            else
+            {
+                RemovePhoto();
+            }
         }
     }
 
-    IEnumerator CapturePicture()
+    IEnumerator CapturePhoto()
     {
+        viewingPhoto = true;
+
         yield return new WaitForEndOfFrame();
 
         Rect regionToRead = new Rect(0, 0, Screen.width, Screen.height);
 
         screenCapture.ReadPixels(regionToRead, 0, 0, false);
         screenCapture.Apply();
-        ShowPicture();
+        ShowPhoto();
     }
 
-    void ShowPicture()
+    void ShowPhoto()
     {
-        Sprite PictureSprite = Sprite.Create(screenCapture, new Rect(0.0f, 0.0f, screenCapture.width, screenCapture.height), new Vector2(0.5f, 0.5f), 100.0f);
-        pictureDisplayArea.sprite = PictureSprite;
+        Sprite photoSprite = Sprite.Create(screenCapture, new Rect(0.0f, 0.0f, screenCapture.width, screenCapture.height), new Vector2(0.5f, 0.5f), 100.0f);
+        photoDisplayArea.sprite = photoSprite;
+
+        photoFrame.SetActive(true);
+    }
+    
+    void RemovePhoto()
+    {
+        viewingPhoto = false;
+        photoFrame.SetActive(false);
     }
 }
