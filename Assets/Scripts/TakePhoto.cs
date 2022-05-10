@@ -14,6 +14,7 @@ public class TakePhoto : MonoBehaviour
     public bool cameraMode = false;
     private Texture2D screenCapture;
     private bool viewingPhoto;
+    public bool takingPhoto;
 
     private void Start()
     {
@@ -36,6 +37,7 @@ public class TakePhoto : MonoBehaviour
         {
             if(!viewingPhoto)
             {
+                takingPhoto = true;
                 StartCoroutine(CapturePhoto());
             }
             else
@@ -54,8 +56,10 @@ public class TakePhoto : MonoBehaviour
 
     IEnumerator CapturePhoto()
     {
-        viewingPhoto = true; 
+        
+        viewingPhoto = true;
 
+        yield return new WaitForSeconds(0.001f);
         yield return new WaitForEndOfFrame();
 
         Rect regionToRead = new Rect(0, 0, Screen.width, Screen.height);
@@ -69,6 +73,7 @@ public class TakePhoto : MonoBehaviour
         cameraFlash.SetActive(true);
         yield return new WaitForSeconds(flashTime);
         cameraFlash.SetActive(false);
+        takingPhoto = false;
     }
 
     void ShowPhoto()
@@ -79,6 +84,7 @@ public class TakePhoto : MonoBehaviour
         StartCoroutine(CameraFlashEffect());
         photoFrame.SetActive(true);
         fadingAnimation.Play("PhotoFade");
+        
     }
 
 
