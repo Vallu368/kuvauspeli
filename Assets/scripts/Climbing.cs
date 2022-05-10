@@ -34,7 +34,7 @@ public class Climbing : MonoBehaviour
     private void StateMachine()
     {
         // climbing
-        if (wallFront && Input.GetKey(KeyCode.W))
+        if (wallFront && Input.GetKey(KeyCode.E))
         {
             StartClimbing();
         }

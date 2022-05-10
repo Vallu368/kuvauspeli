@@ -171,6 +171,7 @@ GameObject:
   - component: {fileID: 4669797571881959377}
   - component: {fileID: 3426885531818293069}
   - component: {fileID: 1045030838}
+  - component: {fileID: 1045030841}
   m_Layer: 0
   m_Name: Bruh
   m_TagString: Untagged
@@ -242,3 +243,23 @@ MonoBehaviour:
   maxSlopeAngle: 40
   orientation: {fileID: 291847321}
   state: 0
+--- !u!114 &1045030841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9159200028164554504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3af418928a5cf3f45bc6572904de6c2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orientaion: {fileID: 291847321}
+  rb: {fileID: 3426885531818293069}
+  whatIsWall:
+    serializedVersion: 2
+    m_Bits: 128
+  climbSpeed: 4
+  detectionLength: 0.7
+  sphereCastRadius: 0.25

@@ -53,9 +53,9 @@ public class PlayerMovement : MonoBehaviour
     public MovementState state; // will store the current state the player is in
     public enum MovementState // enum = custom type that you can create in scripts
     {
-        crouching,
         walking,
         sprinting,
+        crouching,
         air
     }
 
@@ -113,7 +113,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(crouchKey))
         {
             transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
-            rb.AddForce(Vector3.down * 5f, ForceMode.Impulse);
+            rb.AddForce(Vector3.down * 0.8f, ForceMode.Impulse);
         }
 
         // stop crouching
