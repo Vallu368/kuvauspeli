@@ -10,7 +10,8 @@ public class TakePhoto : MonoBehaviour
     [SerializeField] private GameObject cameraFlash;
     [SerializeField] private float flashTime;
     [SerializeField] private Animator fadingAnimation;
-
+    [SerializeField] private GameObject cameraUI;
+    public bool cameraMode = false;
     private Texture2D screenCapture;
     private bool viewingPhoto;
 
@@ -21,7 +22,17 @@ public class TakePhoto : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(1)) //jos pid‰t right click pohjassa niin kamerajutut menee p‰‰lle ja voit ottaa kuvia
+        {
+            cameraMode = true;
+        }
+        else cameraMode = false;
+        if (cameraMode) 
+        {
+            cameraUI.SetActive(true);
+        }
+        else cameraUI.SetActive(false);
+        if(cameraMode && Input.GetMouseButtonDown(0)) //jos pid‰t right click pohjassa ja painat left click otat kuvan, jos kuva jo valmiina ruudulla left click poistaa sen
         {
             if(!viewingPhoto)
             {
@@ -32,11 +43,18 @@ public class TakePhoto : MonoBehaviour
                 RemovePhoto();
             }
         }
+        if (!cameraMode && Input.GetMouseButtonDown(0)) 
+        {
+            if (viewingPhoto)
+            {
+                RemovePhoto(); //left click poistaa kuvan vaikka right click ei olis pohjassa
+            }
+        }
     }
 
     IEnumerator CapturePhoto()
     {
-        viewingPhoto = true;
+        viewingPhoto = true; 
 
         yield return new WaitForEndOfFrame();
 
