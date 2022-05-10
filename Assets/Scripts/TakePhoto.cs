@@ -7,6 +7,9 @@ public class TakePhoto : MonoBehaviour
 {
     [SerializeField] private Image photoDisplayArea;
     [SerializeField] private GameObject photoFrame;
+    [SerializeField] private GameObject cameraFlash;
+    [SerializeField] private float flashTime;
+    [SerializeField] private Animator fadingAnimation;
 
     private Texture2D screenCapture;
     private bool viewingPhoto;
@@ -43,14 +46,24 @@ public class TakePhoto : MonoBehaviour
         screenCapture.Apply();
         ShowPhoto();
     }
+    IEnumerator CameraFlashEffect()
+    {
+        cameraFlash.SetActive(true);
+        yield return new WaitForSeconds(flashTime);
+        cameraFlash.SetActive(false);
+    }
 
     void ShowPhoto()
     {
+        
         Sprite photoSprite = Sprite.Create(screenCapture, new Rect(0.0f, 0.0f, screenCapture.width, screenCapture.height), new Vector2(0.5f, 0.5f), 100.0f);
         photoDisplayArea.sprite = photoSprite;
-
+        StartCoroutine(CameraFlashEffect());
         photoFrame.SetActive(true);
+        fadingAnimation.Play("PhotoFade");
     }
+
+
     
     void RemovePhoto()
     {
