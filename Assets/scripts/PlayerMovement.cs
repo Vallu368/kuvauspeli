@@ -50,6 +50,8 @@ public class PlayerMovement : MonoBehaviour
     // reference to rigidbody
     Rigidbody rb;
 
+    public bool canPlayerMove = false;
+
     public MovementState state; // will store the current state the player is in
     public enum MovementState // enum = custom type that you can create in scripts
     {
@@ -73,24 +75,28 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        // ground check + remember to put the whatIsGround tag on stuff that you want to be grounded on
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
-
-        // handle/apply the drag
-        if (grounded)
+        if (canPlayerMove == true) 
         {
-            rb.drag = groundDrag;
+            // ground check + remember to put the whatIsGround tag on stuff that you want to be grounded on
+            grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
+
+            // handle/apply the drag
+            if (grounded)
+            {
+                rb.drag = groundDrag;
+            }
+            else
+                rb.drag = 0;
+
+            MyInput();
+
+            SpeedControl();
+
+            StateHandler();
+
+            Debug.Log(state);
         }
-        else
-            rb.drag = 0;
 
-        MyInput();
-
-        SpeedControl();
-
-        StateHandler();
-
-        Debug.Log(state);
     }
 
     private void FixedUpdate()

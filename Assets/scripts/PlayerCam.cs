@@ -12,6 +12,8 @@ public class PlayerCam : MonoBehaviour
     private float xRotation;
     private float yRotation;
 
+    public bool canPlayerMove = true;
+
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;   //cursor lukitto keskelle näyttöä
@@ -20,6 +22,9 @@ public class PlayerCam : MonoBehaviour
 
     private void Update()
     {
+        if (canPlayerMove)
+        {
+
         // hiiren input
         float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * sensX;
         float mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * sensY;
@@ -35,5 +40,6 @@ public class PlayerCam : MonoBehaviour
         transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
         // jotta pelaaja kääntyy kameran mukana
         orientation.rotation = Quaternion.Euler(0, yRotation, 0);
+        }
     }
 }

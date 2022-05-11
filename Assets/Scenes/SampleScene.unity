@@ -554,38 +554,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 121230540399476468}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1045030837 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9159200028164554504, guid: d5828c2aeedcc584991cbcf81ccd874c,
-    type: 3}
-  m_PrefabInstance: {fileID: 121230540399476468}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &1045030839 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 3426885531818293069, guid: d5828c2aeedcc584991cbcf81ccd874c,
-    type: 3}
-  m_PrefabInstance: {fileID: 121230540399476468}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1045030841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1045030837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3af418928a5cf3f45bc6572904de6c2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  orientaion: {fileID: 291847321}
-  rb: {fileID: 1045030839}
-  whatIsWall:
-    serializedVersion: 2
-    m_Bits: 128
-  climbSpeed: 10
-  detectionLength: 0.7
-  sphereCastRadius: 0.25
 --- !u!1 &1347322565
 GameObject:
   m_ObjectHideFlags: 0
@@ -880,7 +848,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bruh
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1045030841, guid: d5828c2aeedcc584991cbcf81ccd874c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d5828c2aeedcc584991cbcf81ccd874c, type: 3}
 --- !u!1001 &2001046884813635508
 PrefabInstance:
