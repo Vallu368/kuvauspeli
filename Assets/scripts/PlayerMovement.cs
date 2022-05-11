@@ -89,6 +89,8 @@ public class PlayerMovement : MonoBehaviour
         SpeedControl();
 
         StateHandler();
+
+        Debug.Log(state);
     }
 
     private void FixedUpdate()
@@ -96,7 +98,7 @@ public class PlayerMovement : MonoBehaviour
         MovePlayer();
     }
 
-    private void MyInput()
+    private void StateHandler()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
@@ -110,33 +112,38 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // start crouch
-        if (Input.GetKeyDown(crouchKey))
+        if (state == MovementState.crouching)
         {
             transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
             rb.AddForce(Vector3.down * 0.8f, ForceMode.Impulse);
+            moveSpeed = crouchSpeed;
         }
 
         // stop crouching
-        if (Input.GetKeyUp(crouchKey))
+        if (state != MovementState.crouching)
         {
             transform.localScale = new Vector3(transform.localScale.x, startYScale, transform.localScale.z);
         }
+
+        // running/sprinting
+        if(state == MovementState.sprinting)
+        {
+            moveSpeed = sprintSpeed;
+        }
     }
 
-    private void StateHandler()
+    private void MyInput()
     {
         // crouching mode
         if (Input.GetKey(crouchKey))
         {
             state = MovementState.crouching;
-            moveSpeed = crouchSpeed;
         }
 
         // sprinting mode
-        if (Input.GetKey(sprintKey))
+        else if (Input.GetKey(sprintKey))
         {
             state = MovementState.sprinting;
-            moveSpeed = sprintSpeed;
         }
 
         // walking mode
