@@ -115,7 +115,7 @@ public class PlayerMovement : MonoBehaviour
         if (state == MovementState.crouching)
         {
             transform.localScale = new Vector3(transform.localScale.x, crouchYScale, transform.localScale.z);
-            rb.AddForce(Vector3.down * 0.8f, ForceMode.Impulse);
+            //rb.AddForce(Vector3.down * 0.8f, ForceMode.Impulse);
             moveSpeed = crouchSpeed;
         }
 
@@ -135,13 +135,13 @@ public class PlayerMovement : MonoBehaviour
     private void MyInput()
     {
         // crouching mode
-        if (Input.GetKey(crouchKey))
+        if (Input.GetKey(crouchKey) && grounded)
         {
             state = MovementState.crouching;
         }
 
         // sprinting mode
-        else if (Input.GetKey(sprintKey))
+        else if (Input.GetKey(sprintKey) && grounded)
         {
             state = MovementState.sprinting;
         }
