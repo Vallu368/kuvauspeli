@@ -71,6 +71,7 @@ public class PlayerMovement : MonoBehaviour
 
         // save normal Y scale of the player
         startYScale = transform.localScale.y;
+
     }
 
     private void Update()
@@ -96,7 +97,6 @@ public class PlayerMovement : MonoBehaviour
 
             Debug.Log(state);
         }
-
     }
 
     private void FixedUpdate()

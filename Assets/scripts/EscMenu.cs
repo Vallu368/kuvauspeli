@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class EscMenu : MonoBehaviour
 {
+    public bool isGamePaused = false;
+
+    [SerializeField] GameObject pauseMenu;
+
     GameObject player;
     PlayerMovement playerMovement;
     PlayerCam cam;
@@ -22,23 +24,28 @@ public class MainMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;   //cursor ei lukittu
         Cursor.visible = true;                     //cursor näkyy
     }
-    public void StartGame()
+
+    private void Update()
     {
-        gameObject.SetActive(false);
-        Cursor.lockState = CursorLockMode.Locked;   //cursor lukitto keskelle näyttöä
-        Cursor.visible = false;                     //cursor näkymätön
-        playerMovement.canPlayerMove = true;
-        cam.canPlayerMove = true;
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            if (isGamePaused)
+            {
+                ResumeGame();
+            }
+            else PauseGame();
+        }
     }
 
-    public void LoadMainmenu()
+    void ResumeGame()
     {
-        SceneManager.LoadScene("StartScene");
+        isGamePaused = false;
+        pauseMenu.SetActive(false);
     }
 
-    public void QuitGame()
+    void PauseGame()
     {
-        Application.Quit();
-        Debug.Log("Quit game");
+        isGamePaused = true;
+        pauseMenu.SetActive(true);
     }
 }

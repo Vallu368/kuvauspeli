@@ -16,8 +16,8 @@ public class PlayerCam : MonoBehaviour
 
     private void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;   //cursor lukitto keskelle näyttöä
-        Cursor.visible = false;                     //cursor näkymätön
+        //Cursor.lockState = CursorLockMode.Locked;   //cursor lukitto keskelle näyttöä
+        //Cursor.visible = false;                     //cursor näkymätön
     }
 
     private void Update()
