@@ -6,12 +6,14 @@ public class CameraRaycast : MonoBehaviour
 {
     private Ray ray;
     public TakePhoto takePhoto;
+    public InventoryScript inv;
 
     public float sphereRadius;
     public float distance;
     public LayerMask layerMask;
     private Vector3 origin;
     private Vector3 direction;
+    public int objective = 0;
 
 
     private void Start()
@@ -27,11 +29,15 @@ public class CameraRaycast : MonoBehaviour
         {
             if (hit.collider.tag == "TEST TAG")
             {
+                objective = 1;
                 if (takePhoto.cameraMode && Input.GetMouseButtonDown(0))
                 {
                     hit.collider.GetComponent<GhostScript>().isGhostActive = true;
+
                 }
+
             }
+            else objective = 0;
         }
 
     }
