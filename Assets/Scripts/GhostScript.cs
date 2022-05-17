@@ -9,6 +9,7 @@ public class GhostScript : MonoBehaviour
     public bool isGhostActive;
     public PhotoItem item;
     public TakePhoto takePhoto;
+    public int objectiveNumber = 0;
     void Start()
     {
         

@@ -14,6 +14,7 @@ public class CameraRaycast : MonoBehaviour
     private Vector3 origin;
     private Vector3 direction;
     public int objective = 0;
+    public int hitObjectID = 0;
 
 
     private void Start()
@@ -33,6 +34,7 @@ public class CameraRaycast : MonoBehaviour
                 if (takePhoto.cameraMode && Input.GetMouseButtonDown(0))
                 {
                     hit.collider.GetComponent<GhostScript>().isGhostActive = true;
+                    hitObjectID = hit.collider.GetComponent<GhostScript>().objectiveNumber;
 
                 }
 
