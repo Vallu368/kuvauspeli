@@ -7,6 +7,8 @@ public class GhostScript : MonoBehaviour
     // Start is called before the first frame update
     public GameObject ghostPrefab;
     public bool isGhostActive;
+    public PhotoItem item;
+    public TakePhoto takePhoto;
     void Start()
     {
         
@@ -26,6 +28,6 @@ public class GhostScript : MonoBehaviour
         yield return new WaitForSeconds(0.01f);
         ghostPrefab.SetActive(false);
         isGhostActive = false;
-        
     }
+
 }
