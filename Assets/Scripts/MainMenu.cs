@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
@@ -12,7 +11,7 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+     player = GameObject.FindGameObjectWithTag("Player");
         playerMovement = player.GetComponentInChildren<PlayerMovement>();
         cam = player.GetComponentInChildren<PlayerCam>();
 
@@ -20,20 +19,16 @@ public class MainMenu : MonoBehaviour
         cam.canPlayerMove = false;
 
         Cursor.lockState = CursorLockMode.None;   //cursor ei lukittu
-        Cursor.visible = true;                     //cursor näkyy
+        Cursor.visible = true;                     //cursor nï¿½kyy
     }
+
     public void StartGame()
     {
         gameObject.SetActive(false);
-        Cursor.lockState = CursorLockMode.Locked;   //cursor lukitto keskelle näyttöä
-        Cursor.visible = false;                     //cursor näkymätön
+        Cursor.lockState = CursorLockMode.Locked;   //cursor lukitto keskelle nï¿½yttï¿½ï¿½
+        Cursor.visible = false;                     //cursor nï¿½kymï¿½tï¿½n
         playerMovement.canPlayerMove = true;
         cam.canPlayerMove = true;
-    }
-
-    public void LoadMainmenu()
-    {
-        SceneManager.LoadScene("StartScene");
     }
 
     public void QuitGame()
