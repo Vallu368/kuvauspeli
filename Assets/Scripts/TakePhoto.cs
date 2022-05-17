@@ -17,7 +17,6 @@ public class TakePhoto : MonoBehaviour
     private Texture2D screenCapture;
     private bool viewingPhoto;
     public bool takingPhoto;
-
     private void Start()
     {
         
@@ -25,7 +24,6 @@ public class TakePhoto : MonoBehaviour
 
     private void Update()
     {
-
         if (Input.GetMouseButton(1)) //jos pid‰t right click pohjassa niin kamerajutut menee p‰‰lle ja voit ottaa kuvia
         {
             cameraMode = true;
@@ -66,7 +64,6 @@ public class TakePhoto : MonoBehaviour
         yield return new WaitForEndOfFrame();
 
         Rect regionToRead = new Rect(0, 0, Screen.width, Screen.height);
-
         screenCapture.ReadPixels(regionToRead, 0, 0, false);
         screenCapture.Apply();
         ShowPhoto();
@@ -86,7 +83,7 @@ public class TakePhoto : MonoBehaviour
         Sprite photoSprite = Sprite.Create(screenCapture, new Rect(0.0f, 0.0f, screenCapture.width, screenCapture.height), new Vector2(0.5f, 0.5f), 100.0f);
         if (raycast.objective == 1)
         {
-            inv.AddImageToInventory(1, photoSprite);
+            inv.AddImageToInventory(raycast.hitObjectID, photoSprite);
         }
 
         photoDisplayArea.sprite = photoSprite;
