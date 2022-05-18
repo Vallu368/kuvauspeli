@@ -247,7 +247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3503f2084037be042b759ffa54686b89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  takePhoto: {fileID: 0}
+  takePhoto: {fileID: 5621115044057148568}
   photos:
   - {fileID: 11400000, guid: 8ef44e8b7396c0a498e45b986636474a, type: 2}
   - {fileID: 11400000, guid: ae60636b1cf8a3b43a30e9337837f702, type: 2}
@@ -258,7 +258,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  item: {fileID: 0}
   inventoryPanel: {fileID: 0}
   inventoryOpen: 0
   i: 0

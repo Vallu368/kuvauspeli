@@ -33,8 +33,11 @@ public class CameraRaycast : MonoBehaviour
                 objective = 1;
                 if (takePhoto.cameraMode && Input.GetMouseButtonDown(0))
                 {
-                    hit.collider.GetComponent<GhostScript>().isGhostActive = true;
-                    hitObjectID = hit.collider.GetComponent<GhostScript>().objectiveNumber;
+                    if (hit.collider.GetComponent<ObjectiveScript>().hasGhost)
+                    {
+                        hit.collider.GetComponent<ObjectiveScript>().isGhostActive = true;
+                    }
+                    hitObjectID = hit.collider.GetComponent<ObjectiveScript>().objectiveNumber;
 
                 }
 

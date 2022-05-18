@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GhostScript : MonoBehaviour
+public class ObjectiveScript : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject ghostPrefab;
-    public bool isGhostActive;
-    public PhotoItem item;
+    public bool hasGhost;
     public TakePhoto takePhoto;
     public int objectiveNumber = 0;
+
+    public bool isGhostActive;
     void Start()
     {
         
