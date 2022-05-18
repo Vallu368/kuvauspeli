@@ -11,16 +11,21 @@ public class PickUp : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            isHolding = true;
+            if (!isHolding)
+            {
             GetComponent<Rigidbody>().isKinematic = true;
             this.transform.parent = GameObject.Find("PickedObjectPos").transform;
-        }
+                Debug.Log("pickedup");
+            isHolding = true;
+            }
 
-        if(Input.GetKeyUp(KeyCode.E))
-        {
-            isHolding = false;
+            else if (isHolding)
+            {
             this.transform.parent = null;
             GetComponent<Rigidbody>().isKinematic=false;
+                Debug.Log("drop");
+            isHolding = false;
+            }
         }
     }
 

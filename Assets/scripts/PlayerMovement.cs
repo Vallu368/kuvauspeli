@@ -95,7 +95,7 @@ public class PlayerMovement : MonoBehaviour
 
             StateHandler();
 
-            Debug.Log(state);
+          //  Debug.Log(state);
         }
     }
 
