@@ -7,7 +7,6 @@ public class InventoryScript : MonoBehaviour
 {
     public TakePhoto takePhoto;
 
-    public List<PhotoItem> photos;
     public List<Image> images;
     public GameObject inventoryPanel;
     public bool inventoryOpen;
@@ -49,20 +48,21 @@ public class InventoryScript : MonoBehaviour
             {
                 inventoryPanel.SetActive(false);
                 inventoryOpen = false;
-                Cursor.lockState = CursorLockMode.Locked;   //cursor ei lukittu
+                Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
                 playerMovement.canPlayerMove = true;
                 cam.canPlayerMove = true;
                 playerMovement.enabled = true;
             }
         }
-        for (int i = 0; i < photos.Count; i++)
-        images[i].sprite = photos[i].itemSprite;
+        //for (int i = 0; i < photos.Count; i++)
+        //images[i].sprite = photos[i].itemSprite;
         
     }
 
     public void AddImageToInventory(int id, Sprite sprite)
     {
-        photos[id].itemSprite = sprite;
+        images[id].sprite = sprite; 
+        
     }
 }

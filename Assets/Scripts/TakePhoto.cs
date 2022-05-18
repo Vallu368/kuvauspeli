@@ -57,6 +57,7 @@ public class TakePhoto : MonoBehaviour
 
     IEnumerator CapturePhoto()
     {
+        cameraUI.SetActive(false);
         screenCapture = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
         viewingPhoto = true;
 

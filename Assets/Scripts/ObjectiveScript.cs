@@ -9,11 +9,13 @@ public class ObjectiveScript : MonoBehaviour
     public bool hasGhost;
     public TakePhoto takePhoto;
     public int objectiveNumber = 0;
+    private GameObject player;
 
     public bool isGhostActive;
     void Start()
     {
-        
+        player = GameObject.Find("Player");
+        takePhoto = player.GetComponentInChildren<TakePhoto>();
     }
 
     // Update is called once per frame
