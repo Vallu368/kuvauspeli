@@ -36,10 +36,8 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
         Debug.Log("Quit game");
     }
-
-    public void Fullscreen(bool isFullscreen)
+    public void SetFullscreen(bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;
-        Debug.Log("fullscreen");
     }
 }
