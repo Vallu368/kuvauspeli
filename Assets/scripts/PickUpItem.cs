@@ -42,6 +42,9 @@ public class PickUpItem : MonoBehaviour
         else if (equipped && Input.GetKeyDown(KeyCode.E))
         {
             Drop();
+            //force to throw the gun. impulse bc its one time
+            rb.AddForce(fpsCam.forward * dropForwardForce, ForceMode.Impulse);
+            rb.AddForce(fpsCam.up * dropUpwardForce, ForceMode.Impulse);
             Debug.Log("dropping");
         }
     }
@@ -72,11 +75,7 @@ public class PickUpItem : MonoBehaviour
         transform.SetParent(null);
 
         //gun carries momentum of player
-        rb.velocity = player.GetComponent<Rigidbody>().velocity;
-
-        //force to throw the gun. impulse bc its one time
-        rb.AddForce(fpsCam.forward * dropForwardForce, ForceMode.Impulse);
-        rb.AddForce(fpsCam.up * dropUpwardForce, ForceMode.Impulse);
+        //rb.velocity = player.GetComponent<Rigidbody>().velocity;
 
         //make rb not kinematic so it moves and boxcollider normal
         rb.isKinematic = false;
