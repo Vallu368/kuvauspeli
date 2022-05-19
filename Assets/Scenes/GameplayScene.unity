@@ -319,7 +319,7 @@ GameObject:
   - component: {fileID: 242107429}
   - component: {fileID: 242107428}
   - component: {fileID: 242107427}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: box2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1649,7 +1649,7 @@ GameObject:
   - component: {fileID: 1323883983}
   - component: {fileID: 1323883987}
   - component: {fileID: 1323883989}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
