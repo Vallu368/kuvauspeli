@@ -54,6 +54,9 @@ public class PickUpItem : MonoBehaviour
         equipped = true;
         slotFull = true;
 
+        rb.velocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
+
         //make item a child of the camera and move it to default position
         transform.SetParent(item);
         transform.localPosition = Vector3.zero;
@@ -61,9 +64,10 @@ public class PickUpItem : MonoBehaviour
         transform.localScale = Vector3.one;
 
         //make rb kinematic so it doesnt move anymore and boxcollider a trigger
-        rb.isKinematic = true;
-        //rb.useGravity = false;
-        coll.isTrigger = true;
+        //rb.isKinematic = true;
+        rb.useGravity = false;
+        //coll.isTrigger = true;
+        rb.detectCollisions = true;
     }
 
     private void Drop()
@@ -78,6 +82,7 @@ public class PickUpItem : MonoBehaviour
         //rb.velocity = player.GetComponent<Rigidbody>().velocity;
 
         //make rb not kinematic so it moves and boxcollider normal
+        rb.useGravity = true;
         rb.isKinematic = false;
         coll.isTrigger = false;
     }
