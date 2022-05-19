@@ -15,6 +15,7 @@ public class InventoryScript : MonoBehaviour
     GameObject player;
     PlayerMovement playerMovement;
     PlayerCam cam;
+    TakePhoto photo;
     void Start()
     {
         inventoryPanel.SetActive(false);
@@ -23,13 +24,14 @@ public class InventoryScript : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         playerMovement = player.GetComponentInChildren<PlayerMovement>();
         cam = player.GetComponentInChildren<PlayerCam>();
+        photo = player.GetComponentInChildren<TakePhoto>();
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (Input.GetKeyDown("i"))
+        if (!photo.cameraMode && Input.GetKeyDown("i"))
         {
             if (inventoryOpen == false)
             {
@@ -40,6 +42,7 @@ public class InventoryScript : MonoBehaviour
                 playerMovement.canPlayerMove = false;
                 cam.canPlayerMove = false;
                 playerMovement.enabled = false;
+                photo.enabled = false;
                 
                 
 
@@ -53,10 +56,9 @@ public class InventoryScript : MonoBehaviour
                 playerMovement.canPlayerMove = true;
                 cam.canPlayerMove = true;
                 playerMovement.enabled = true;
+                photo.enabled = true;
             }
         }
-        //for (int i = 0; i < photos.Count; i++)
-        //images[i].sprite = photos[i].itemSprite;
         
     }
 

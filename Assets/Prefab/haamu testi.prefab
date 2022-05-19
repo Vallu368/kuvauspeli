@@ -112,6 +112,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ghostPrefab: {fileID: 2001046885626526512}
+  hasGhost: 1
+  takePhoto: {fileID: 0}
+  objectiveNumber: 0
   isGhostActive: 0
 --- !u!1 &2001046885626526512
 GameObject:
