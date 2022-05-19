@@ -13,8 +13,9 @@ public class PickUp : MonoBehaviour
         {
             if (!isHolding)
             {
-            GetComponent<Rigidbody>().isKinematic = true;
+            GetComponent<Rigidbody>().useGravity = false;
             this.transform.parent = GameObject.Find("PickedObjectPos").transform;
+                GetComponent<Rigidbody>().freezeRotation = true;
                 Debug.Log("pickedup");
             isHolding = true;
             }
@@ -22,8 +23,9 @@ public class PickUp : MonoBehaviour
             else if (isHolding)
             {
             this.transform.parent = null;
-            GetComponent<Rigidbody>().isKinematic=false;
-                Debug.Log("drop");
+            GetComponent<Rigidbody>().useGravity=true;
+            GetComponent<Rigidbody>().freezeRotation = false;
+            Debug.Log("drop");
             isHolding = false;
             }
         }
