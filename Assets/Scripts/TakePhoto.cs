@@ -11,15 +11,17 @@ public class TakePhoto : MonoBehaviour
     [SerializeField] private float flashTime;
     [SerializeField] private Animator fadingAnimation;
     [SerializeField] private GameObject cameraUI;
+    [SerializeField] private GameObject tutorialText;
     public InventoryScript inv;
     public CameraRaycast raycast;
     public bool cameraMode = false;
     private Texture2D screenCapture;
     private bool viewingPhoto;
     public bool takingPhoto;
+    
     private void Start()
     {
-        
+        tutorialText.SetActive(true);
     }
 
     private void Update()
@@ -27,9 +29,10 @@ public class TakePhoto : MonoBehaviour
         if (Input.GetMouseButton(1)) //jos pid‰t right click pohjassa niin kamerajutut menee p‰‰lle ja voit ottaa kuvia
         {
             cameraMode = true;
+            tutorialText.SetActive(false);
         }
         else cameraMode = false;
-        if (cameraMode) 
+        if (!takingPhoto && cameraMode) 
         {
             cameraUI.SetActive(true);
         }

@@ -7,11 +7,10 @@ public class ObjectiveScript : MonoBehaviour
     // Start is called before the first frame update
     public GameObject ghostPrefab;
     public bool hasGhost;
-    public TakePhoto takePhoto;
     public int objectiveNumber = 0;
     private GameObject player;
-
-    public bool isGhostActive;
+    private TakePhoto takePhoto;
+    private bool isGhostActive;
     void Start()
     {
         player = GameObject.Find("Player");
@@ -32,6 +31,11 @@ public class ObjectiveScript : MonoBehaviour
         yield return new WaitForSeconds(0.01f);
         ghostPrefab.SetActive(false);
         isGhostActive = false;
+    }
+
+    public void SetGhostActive()
+    {
+        isGhostActive = true;
     }
 
 }
