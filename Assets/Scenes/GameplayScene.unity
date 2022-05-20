@@ -374,8 +374,8 @@ MonoBehaviour:
   item: {fileID: 493367500}
   fpsCam: {fileID: 1933609257}
   pickUpRange: 2
-  dropForwardForce: 7
-  dropUpwardForce: 5
+  dropForwardForce: 10
+  dropUpwardForce: 2
   equipped: 0
 --- !u!65 &242107429
 BoxCollider:
@@ -1641,8 +1641,8 @@ MonoBehaviour:
   item: {fileID: 493367500}
   fpsCam: {fileID: 1933609257}
   pickUpRange: 2
-  dropForwardForce: 7
-  dropUpwardForce: 5
+  dropForwardForce: 10
+  dropUpwardForce: 2
   equipped: 0
 --- !u!1 &1338365871
 GameObject:
@@ -3432,6 +3432,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 493367500, guid: 7ed0ddb0146cf3847bb312c9adceb667, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.599
+      objectReference: {fileID: 0}
+    - target: {fileID: 493367500, guid: 7ed0ddb0146cf3847bb312c9adceb667, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.357
+      objectReference: {fileID: 0}
+    - target: {fileID: 493367500, guid: 7ed0ddb0146cf3847bb312c9adceb667, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.294
+      objectReference: {fileID: 0}
     - target: {fileID: 585120761, guid: 7ed0ddb0146cf3847bb312c9adceb667, type: 3}
       propertyPath: inventoryPanel
       value: 
@@ -3776,6 +3788,16 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1220924655}
+    - target: {fileID: 7350409370040300380, guid: abdd857c004b765439fb3f510f8db4e0,
+        type: 3}
+      propertyPath: dropUpwardForce
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7350409370040300380, guid: abdd857c004b765439fb3f510f8db4e0,
+        type: 3}
+      propertyPath: dropForwardForce
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7350409370040300381, guid: abdd857c004b765439fb3f510f8db4e0,
         type: 3}
       propertyPath: m_Interpolate
