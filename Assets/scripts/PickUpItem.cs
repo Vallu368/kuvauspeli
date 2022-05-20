@@ -5,7 +5,7 @@ using UnityEngine;
 public class PickUpItem : MonoBehaviour
 {
     public Rigidbody rb;
-    public BoxCollider coll;
+    public Collider coll;
     public Transform player, item, fpsCam;
 
     public float pickUpRange;
@@ -32,6 +32,14 @@ public class PickUpItem : MonoBehaviour
 
     private void Update()
     {
+        if (equipped)
+        {
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+            slotFull = true;
+        }
+
+
         //check if player is close enough and E is pressed
         Vector3 distanceToPlayer = player.position - transform.position;
         if (!equipped && distanceToPlayer.magnitude <= pickUpRange && Input.GetKeyDown(KeyCode.E) && !slotFull)
@@ -47,15 +55,23 @@ public class PickUpItem : MonoBehaviour
             rb.AddForce(fpsCam.up * dropUpwardForce, ForceMode.Impulse);
             Debug.Log("dropping");
         }
+
+        if (distanceToPlayer.magnitude >= pickUpRange)
+        {
+            equipped = false;
+            slotFull = false;
+
+            transform.SetParent(null);
+            rb.useGravity = true;
+            rb.isKinematic = false;
+            coll.isTrigger = false;
+        }
     }
 
     private void PickUp()
     {
         equipped = true;
         slotFull = true;
-
-        rb.velocity = Vector3.zero;
-        rb.angularVelocity = Vector3.zero;
 
         //make item a child of the camera and move it to default position
         transform.SetParent(item);
