@@ -6,8 +6,6 @@ public class LockControl : MonoBehaviour
 {
     private int[] result, correctCombination;
 
-    private bool lockOpen = false;
-
     private Animator lockAnim;
     [SerializeField] private string openLockName = "lockOpen";
 
@@ -42,11 +40,9 @@ public class LockControl : MonoBehaviour
 
         if(result[0] == correctCombination[0] && result[1] == correctCombination[1] && result[2] == correctCombination[2])
         {
-            lockOpen = true;
             Debug.Log("code is correct");
             lockAnim.Play(openLockName);
         }
-        else lockOpen = false;
     }
 
     private void OnDestroy()
