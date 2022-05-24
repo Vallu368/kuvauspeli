@@ -152,7 +152,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1279943790690543178
 Transform:
   m_ObjectHideFlags: 0
@@ -181,9 +181,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44692fa40851a7d42972a5e285f306f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sun: {fileID: 135427603}
-  rain: {fileID: 0}
-  heavyRain: {fileID: 0}
   rainEnabled: 0
-  rotateSpeed: 500
-  anim: {fileID: 1965140056}
