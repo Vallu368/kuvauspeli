@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class Weather : MonoBehaviour
 {
-    public GameObject sun;
-    public GameObject rain;
-    public GameObject heavyRain;
+    private GameObject rain;
+    private GameObject heavyRain;
     public bool rainEnabled;
-    public int rotateSpeed = 500;
-    public Animator anim;
+    private int nextUpdate;
+    private int i = 0;
+
+    
 
 
     void Start()
@@ -17,72 +18,52 @@ public class Weather : MonoBehaviour
         rain = GameObject.Find("Player/Bruh/Rain");
         heavyRain = GameObject.Find("Player/Bruh/HeavyRain");
         rain.SetActive(false);
-        heavyRain.SetActive(false);
-        
-        
-        
-    }
+        heavyRain.SetActive(false);        
 
-    void Update()
+    }
+    private void Update()
     {
-        if (Input.GetKeyDown("b"))
+        if (Time.time >= nextUpdate)
         {
-            if (!rainEnabled)
+
+            nextUpdate = Mathf.FloorToInt(Time.time) + 1;
+            UpdateEverySecond();
+        }
+        if (i >= 60) //joka 60 sekunttia kattoo randomin, jos randomi on 2 alkaa satamaan
+        {
+            int ind = Random.Range(0, 3);
+            if (ind == 2)
             {
                 StartCoroutine(Raining());
-
+                i = 0;
             }
-            
-            
+            else Debug.Log("not raining");
+            i = 0;
         }
-        if (Input.GetKeyDown("z"))
-        {
-            StartCoroutine(SunDown());
-        }
-
     }
 
-
-    public IEnumerator Raining()
+    void UpdateEverySecond()
     {
-        rainEnabled = true;
-        anim.SetBool("isSunDown", true);
-        yield return new WaitForSeconds(45f);
-        rain.SetActive(true);
+        if (!rainEnabled)
+        {
+            i++;
+        }
+    }
 
-        // yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length + anim.GetCurrentAnimatorStateInfo(0).normalizedTime);
-        yield return new WaitForSeconds(40f);
+    IEnumerator Raining()
+    {
+        Debug.Log("Raining");
+        rainEnabled = true;
+        rain.SetActive(true);
+        yield return new WaitForSeconds(20f);
         rain.SetActive(false);
         heavyRain.SetActive(true);
-        Debug.Log("waiting for 60s");
         yield return new WaitForSeconds(60f);
-        StartCoroutine(StopRaining());
-    }
-    public IEnumerator StopRaining()
-    {
-        Debug.Log("stopping rain");
-        anim.SetBool("isSunDown", false);
-        yield return new WaitForSeconds(45f);
         heavyRain.SetActive(false);
-        rain.SetActive(true);
-        yield return new WaitForSeconds(40f);
-        rain.SetActive(false);
         rainEnabled = false;
+
+
     }
 
-    public IEnumerator SunDown()
-    {
-     //   yield return new WaitForSeconds(180f);
-        Debug.Log("sun down");
-        anim.SetBool("isSunDown", true);
-        yield return new WaitForSeconds(120f);
-        StartCoroutine(SunUp());
-    }
-    public IEnumerator SunUp()
-    {
-        Debug.Log("sun up");
-        yield return new WaitForSeconds(10f);
-        anim.SetBool("isSunDown", true);
-        
-    }
+
 }
