@@ -9703,8 +9703,33 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3000213104523004003, guid: 7ed0ddb0146cf3847bb312c9adceb667, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ed0ddb0146cf3847bb312c9adceb667, type: 3}
+--- !u!1 &3000213104523003997 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6251030097763375413, guid: 7ed0ddb0146cf3847bb312c9adceb667,
+    type: 3}
+  m_PrefabInstance: {fileID: 3000213104523003996}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3000213104523004010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3000213104523003997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 601bbaac5aeb3fb4a8a23f6b0ed6ab9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayLength: 5
+  layerMaskInteract:
+    serializedVersion: 2
+    m_Bits: 256
+  excluseLayername: 
+  openDoorKey: 101
 --- !u!1001 &3660239261863339577
 PrefabInstance:
   m_ObjectHideFlags: 0

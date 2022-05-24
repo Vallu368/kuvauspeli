@@ -6,10 +6,8 @@ namespace DoorSystem
 
 public class LockControl : MonoBehaviour
 {
-    private NormalDoor doorScript;
-
     private int[] result, correctCombination;
-
+        private NormalDoor normalDoorScript;
     private Animator lockAnim;
     [SerializeField] private string openLockName = "lockOpen";
 
@@ -23,6 +21,9 @@ public class LockControl : MonoBehaviour
         result = new int[] {0, 0, 0};
         correctCombination = new int[] { 1, 2, 3 };
         Rotate.Rotated += CheckResults;
+
+        normalDoorScript = GameObject.Find("PlayerCam").GetComponent<NormalDoor>();
+           normalDoorScript.enabled = false;
     }
 
     private void CheckResults(string wheelName, int number)
@@ -46,8 +47,9 @@ public class LockControl : MonoBehaviour
         {
             Debug.Log("code is correct");
             lockAnim.Play(openLockName);
-                doorScript.RaycastChecking();
-        }
+              
+                normalDoorScript.enabled = true;
+            }
     }
 
     private void OnDestroy()
