@@ -17,9 +17,9 @@ public class NormalDoor : MonoBehaviour
 
     private const string interactableTag = "InteractWithDoor";
 
-
-    public void RaycastChecking()
-    {
+        private void Update()
+        {
+            
         RaycastHit hit;
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
 
@@ -42,6 +42,9 @@ public class NormalDoor : MonoBehaviour
                 }
             }
         }
-    }
+        }
+
+
+
 }
 }
