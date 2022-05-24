@@ -7,22 +7,35 @@ public class NDCtrl : MonoBehaviour
     private Animator doorAnim;
     private bool doorOpen = false;
 
+    [SerializeField] private int waitTimer = 1;
+
+    [SerializeField] private bool pauseInteraction = false;
+
     private void Awake()
     {
         doorAnim = gameObject.GetComponent<Animator>();
     }
 
-    public void PlayAnimation()
+    private IEnumerator PauseDoorInteraction()
     {
-        if (!doorOpen)
+        pauseInteraction = true;
+        yield return new WaitForSeconds(waitTimer);
+        pauseInteraction = false;
+    }
+
+        public void PlayAnimation()
+    {
+        if (!doorOpen && !pauseInteraction)
         {
             doorAnim.Play("doorOpen", 0, 0.0f);
             doorOpen = true;
-        }
-        else if (doorOpen) 
+                StartCoroutine(PauseDoorInteraction());
+            }
+        else if (doorOpen && !pauseInteraction) 
         {
             doorAnim.Play("doorClosed", 0, 0.0f);
             doorOpen = false;
-        }
+                StartCoroutine(PauseDoorInteraction());
+            }
     }
 }
