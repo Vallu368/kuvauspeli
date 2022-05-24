@@ -52,6 +52,7 @@ public class TimeController : MonoBehaviour
 
         sunLight = GameObject.Find("Visuals/Sun Light").GetComponent<Light>();
         moonLight = GameObject.Find("Visuals/Moon Light").GetComponent<Light>();
+        timeText = GameObject.Find("Player/CameraCanvas/Time Text").GetComponent<TextMeshProUGUI>();
     }
     void Update()
     {
