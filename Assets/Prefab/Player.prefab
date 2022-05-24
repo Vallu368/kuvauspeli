@@ -642,8 +642,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   excluseLayername: 
-  openDoorKey: 111
---- !u!114 &5734758854478789852
+  openDoorKey: 101
+--- !u!114 &3000213104523004003
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -652,7 +652,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6251030097763375413}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcae037ab651f2e4eb31df4dde112839, type: 3}
+  m_Script: {fileID: 11500000, guid: 601bbaac5aeb3fb4a8a23f6b0ed6ab9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rayLength: 5
@@ -660,7 +660,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   excluseLayername: 
-  openDoorKey: 111
+  openDoorKey: 101
 --- !u!4 &6251030098477555026 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9179175162657461496, guid: 4bdf79ad727b69d4795011409c61235c,

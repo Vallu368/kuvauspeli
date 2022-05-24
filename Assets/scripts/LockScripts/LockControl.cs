@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+namespace DoorSystem
+{
 
 public class LockControl : MonoBehaviour
 {
+    private NormalDoor doorScript;
+
     private int[] result, correctCombination;
 
     private Animator lockAnim;
@@ -42,6 +46,7 @@ public class LockControl : MonoBehaviour
         {
             Debug.Log("code is correct");
             lockAnim.Play(openLockName);
+                doorScript.RaycastChecking();
         }
     }
 
@@ -49,4 +54,5 @@ public class LockControl : MonoBehaviour
     {
         Rotate.Rotated -= CheckResults;
     }
+}
 }

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+namespace DoorSystem
+{
 
 public class NormalDoor : MonoBehaviour
 {
@@ -15,7 +17,8 @@ public class NormalDoor : MonoBehaviour
 
     private const string interactableTag = "InteractWithDoor";
 
-    private void Update()
+
+    public void RaycastChecking()
     {
         RaycastHit hit;
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
@@ -40,4 +43,5 @@ public class NormalDoor : MonoBehaviour
             }
         }
     }
+}
 }

@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+namespace DoorSystem
+{
+
 
 public class NDCtrl : MonoBehaviour
 {
@@ -38,4 +41,5 @@ public class NDCtrl : MonoBehaviour
                 StartCoroutine(PauseDoorInteraction());
             }
     }
+}
 }
