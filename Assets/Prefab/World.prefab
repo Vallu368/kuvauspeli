@@ -81,7 +81,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6271977432428465833
 Transform:
   m_ObjectHideFlags: 0
@@ -191,6 +191,7 @@ Transform:
   - {fileID: 9068590359553428060}
   - {fileID: 7294984042322546008}
   - {fileID: 8903325793514577456}
+  - {fileID: 6873936201764749354}
   - {fileID: 3383340705709073168}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -205,7 +206,7 @@ PrefabInstance:
     - target: {fileID: 7002102252064523092, guid: e73a4cd057894b54ea7bf13b515963ce,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7002102252064523092, guid: e73a4cd057894b54ea7bf13b515963ce,
         type: 3}
@@ -549,6 +550,111 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2186993826846114500, guid: 169a022394ebd544db0e60d829f1ef58, type: 3}
+--- !u!1001 &6408510064606291905
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6166490171056481321}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 9aa3611ad81fd1f4ba760d0c8d843f75,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9aa3611ad81fd1f4ba760d0c8d843f75,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -33
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9aa3611ad81fd1f4ba760d0c8d843f75,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.57
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9aa3611ad81fd1f4ba760d0c8d843f75,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -64.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9aa3611ad81fd1f4ba760d0c8d843f75,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9aa3611ad81fd1f4ba760d0c8d843f75,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000004214686
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9aa3611ad81fd1f4ba760d0c8d843f75,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9aa3611ad81fd1f4ba760d0c8d843f75,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.000000042146848
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9aa3611ad81fd1f4ba760d0c8d843f75,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9aa3611ad81fd1f4ba760d0c8d843f75,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9aa3611ad81fd1f4ba760d0c8d843f75,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9aa3611ad81fd1f4ba760d0c8d843f75,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5f7d430f46977264588c95b31caba965, type: 2}
+    - target: {fileID: 919132149155446097, guid: 9aa3611ad81fd1f4ba760d0c8d843f75,
+        type: 3}
+      propertyPath: m_Name
+      value: Kuvapeli_kartta2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9aa3611ad81fd1f4ba760d0c8d843f75,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9aa3611ad81fd1f4ba760d0c8d843f75, type: 3}
+--- !u!1 &6066049780429265552 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9aa3611ad81fd1f4ba760d0c8d843f75,
+    type: 3}
+  m_PrefabInstance: {fileID: 6408510064606291905}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &679030618465918631
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6066049780429265552}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2406732068236358270, guid: 9aa3611ad81fd1f4ba760d0c8d843f75, type: 3}
+--- !u!4 &6873936201764749354 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9aa3611ad81fd1f4ba760d0c8d843f75,
+    type: 3}
+  m_PrefabInstance: {fileID: 6408510064606291905}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8936354277421431259
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -640,6 +746,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kuvapeli_kartta1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dc912af23ed7da14686b7bfebbed0b90,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: dc912af23ed7da14686b7bfebbed0b90,
         type: 3}
