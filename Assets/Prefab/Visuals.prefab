@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 318391770}
   - component: {fileID: 318391771}
   m_Layer: 0
-  m_Name: Moon light
+  m_Name: Moon Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 7154580575663704072}
   - component: {fileID: 7154580575663704079}
   m_Layer: 0
-  m_Name: Directional Light
+  m_Name: Sun Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
