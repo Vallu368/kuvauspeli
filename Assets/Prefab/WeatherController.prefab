@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 135427606}
   - component: {fileID: 135427605}
   - component: {fileID: 135427604}
-  - component: {fileID: 135427607}
+  - component: {fileID: 1965140056}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -26,14 +26,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 135427603}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: -1}
+  m_LocalRotation: {x: 0.9659258, y: 0, z: 0, w: 0.2588191}
   m_LocalPosition: {x: 33.80258, y: 43.526234, z: -21.813944}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1279943790690543178}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 360, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 150, y: 0, z: 0}
 --- !u!108 &135427605
 Light:
   m_ObjectHideFlags: 0
@@ -116,22 +116,26 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
---- !u!111 &135427607
-Animation:
+--- !u!95 &1965140056
+Animator:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 135427603}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: fea1db1e048f06a488d72f319d74b71a, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: fea1db1e048f06a488d72f319d74b71a, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cc0fb5a9a78db384b9154a2f1493594d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1279943790690543176
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,5 +181,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44692fa40851a7d42972a5e285f306f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sun: {fileID: 135427603}
   rain: {fileID: 0}
-  sun: {fileID: 0}
+  heavyRain: {fileID: 0}
+  rainEnabled: 0
+  rotateSpeed: 500
+  anim: {fileID: 1965140056}
