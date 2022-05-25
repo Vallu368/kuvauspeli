@@ -199,24 +199,24 @@ public class PlayerMovement : MonoBehaviour
         // limiting speed on slope
         if (OnSlope() && !exitingSlope) // applying limitation and slope movement if not trying to exit a slope
         {
-            if(rb.velocity.magnitude > moveSpeed)
+            if (rb.velocity.magnitude > moveSpeed)
             {
                 rb.velocity = rb.velocity.normalized * moveSpeed;
             }
         }
 
-        // limiting speed on ground or in air
-        else
-        {
-            Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+        // limiting speed on ground or in air, WAS USELESS                    !!! CONTROL + E + C!!! CONTROL + E + U !!!
+        //else
+        //{
+        //    Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
-            // limit speed if needed
-            if (flatVel.magnitude > moveSpeed)
-            {
-                Vector3 limitedVel = flatVel.normalized * moveSpeed;
-                rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, rb.velocity.z);
-            }
-        }
+        //    limit speed if needed
+        //    if (flatVel.magnitude > moveSpeed && !grounded)
+        //        {
+        //            Vector3 limitedVel = flatVel.normalized * moveSpeed;
+        //            rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, rb.velocity.z);
+        //        }
+        //}
 
     }
 
