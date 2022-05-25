@@ -186,7 +186,8 @@ public class PlayerMovement : MonoBehaviour
         // in air
         else if (!grounded)
         {
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+            rb.useGravity = false;
+            rb.AddForce(moveDirection.normalized * moveSpeed * airMultiplier, ForceMode.Force);
         }
 
         // turn off gravity while on slope
@@ -213,8 +214,8 @@ public class PlayerMovement : MonoBehaviour
         //    limit speed if needed
         //    if (flatVel.magnitude > moveSpeed && !grounded)
         //        {
-        //            Vector3 limitedVel = flatVel.normalized * moveSpeed;
-        //            rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, rb.velocity.z);
+        //            Vector3 limitedVel = flatVel.normalized;
+        //            rb.velocity = new Vector3(flatVel.x, rb.velocity.y, rb.velocity.z);
         //        }
         //}
 
@@ -228,7 +229,7 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
         // add force upwards
-        rb.AddForce(transform.up * jumpForce, ForceMode.Impulse); // ForceMode.Impluse because it's only going to apply the force once
+        rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse); // ForceMode.Impluse because it's only going to apply the force once
     }
 
     private void ResetJump()
