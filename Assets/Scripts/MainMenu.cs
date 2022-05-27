@@ -9,6 +9,8 @@ public class MainMenu : MonoBehaviour
     PlayerMovement playerMovement;
     PlayerCam cam;
 
+    [SerializeField] GameObject crosshair;
+
     private void Start()
     {
      player = GameObject.FindGameObjectWithTag("Player");
@@ -29,6 +31,7 @@ public class MainMenu : MonoBehaviour
         Cursor.visible = false;                     //cursor n�kym�t�n
         playerMovement.canPlayerMove = true;
         cam.canPlayerMove = true;
+        crosshair.gameObject.SetActive(true);
     }
 
     public void QuitGame()
