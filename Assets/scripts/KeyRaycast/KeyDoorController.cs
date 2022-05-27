@@ -13,7 +13,7 @@ namespace KeySystem
         [SerializeField] private string openAnimationname = "doorOpen";
         [SerializeField] private string closeAnimationname = "doorClosed";
 
-        [SerializeField] private int timeToShowUI = 1;
+        [SerializeField] private int timeToShowUI = 3;
         [SerializeField] private GameObject showDoorLockedUI = null;
 
         [SerializeField] private KeyInventory _keyInventory = null;

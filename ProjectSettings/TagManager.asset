@@ -8,6 +8,7 @@ TagManager:
   - escmenu
   - InteractiveObject
   - InteractWithDoor
+  - InteractWithLock
   layers:
   - Default
   - TransparentFX

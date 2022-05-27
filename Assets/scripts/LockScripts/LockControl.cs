@@ -19,7 +19,7 @@ public class LockControl : MonoBehaviour
     private void Start()
     {
         result = new int[] {0, 0, 0};
-        correctCombination = new int[] { 1, 2, 3 };
+        correctCombination = new int[] { 3, 6, 5 };
         Rotate.Rotated += CheckResults;
 
         normalDoorScript = GameObject.Find("PlayerCam").GetComponent<NormalDoor>();
