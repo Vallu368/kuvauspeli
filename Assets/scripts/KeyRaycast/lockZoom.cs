@@ -5,6 +5,7 @@ using UnityEngine;
 public class lockZoom : MonoBehaviour
 {
     [SerializeField] private Camera mainCam;
+    [SerializeField] private GameObject maxZoomText;
 
     private void Update()
     {
@@ -23,6 +24,12 @@ public class lockZoom : MonoBehaviour
             mainCam.fieldOfView += 35;
             Debug.Log("zooming out");
         }
+
+        if(mainCam.fieldOfView <= 33)
+        {
+            maxZoomText.SetActive(true);
+        }
+        else maxZoomText.SetActive(false);
 
     }
 }
