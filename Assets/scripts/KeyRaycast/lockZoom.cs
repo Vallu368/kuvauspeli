@@ -7,7 +7,7 @@ public class lockZoom : MonoBehaviour
     [SerializeField] private Camera mainCam;
     [SerializeField] private GameObject maxZoomText;
 
-    private float scrollSpeed = 10;
+    private float scrollSpeed = 50;
 
     private void Update()
     {
