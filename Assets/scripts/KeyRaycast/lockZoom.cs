@@ -7,23 +7,32 @@ public class lockZoom : MonoBehaviour
     [SerializeField] private Camera mainCam;
     [SerializeField] private GameObject maxZoomText;
 
+    private float scrollSpeed = 10;
+
     private void Update()
     {
 
-        if (mainCam.fieldOfView > 25)
+        if (mainCam.fieldOfView <= 60)
         {
-           if (Input.GetKey(KeyCode.R))
-           {
-              mainCam.fieldOfView -= 0.2f;
-              Debug.Log("zooming in");
-           }
-                    
+            mainCam.fieldOfView -= Input.GetAxis("Mouse ScrollWheel") * scrollSpeed;
         }
-        else if (Input.GetKeyUp(KeyCode.R))
+        else mainCam.fieldOfView = 60;
+
+        if (mainCam.fieldOfView >= 25)
         {
-            mainCam.fieldOfView += 35;
-            Debug.Log("zooming out");
+            mainCam.fieldOfView -= Input.GetAxis("Mouse ScrollWheel") * scrollSpeed;
         }
+        else mainCam.fieldOfView = 25;
+
+
+        //if (mainCam.fieldOfView < 60)
+        //{
+        //    if (Input.GetKey(KeyCode.T))
+        //    {
+        //        mainCam.fieldOfView += 0.2f;
+        //        Debug.Log("zooming out");
+        //    }
+        //}
 
         if(mainCam.fieldOfView <= 33)
         {
