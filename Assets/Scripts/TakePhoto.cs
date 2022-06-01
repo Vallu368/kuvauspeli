@@ -74,6 +74,7 @@ public class TakePhoto : MonoBehaviour
         screenCapture.Apply();
         ShowPhoto();
         
+        
     }
     IEnumerator CameraFlashEffect()
     {
@@ -107,5 +108,6 @@ public class TakePhoto : MonoBehaviour
     {
         viewingPhoto = false;
         photoFrame.SetActive(false);
+        crosshair.SetActive(true);
     }
 }
