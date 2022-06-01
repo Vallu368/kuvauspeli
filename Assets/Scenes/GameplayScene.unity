@@ -1298,12 +1298,12 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.42731938, b: 0.6784314, a: 1}
+  deepColor: {r: 0, g: 0.42731652, b: 0.6784314, a: 1}
   colorDepth: 4
-  horizonColor: {r: 0, g: 0.22731939, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22731653, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.3018292, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30182633, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0
@@ -2197,7 +2197,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 3000213104523003996}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 3000213104523003998}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf3ef593a3793ff4cb70b19ff1ef95dd, type: 3}
@@ -3828,12 +3828,12 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.42731944, b: 0.6784314, a: 1}
+  deepColor: {r: 0, g: 0.4273165, b: 0.6784314, a: 1}
   colorDepth: 4
-  horizonColor: {r: 0, g: 0.22731942, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.2273165, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30182922, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.3018263, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0
@@ -4840,12 +4840,12 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.42731935, b: 0.6784314, a: 1}
+  deepColor: {r: 0, g: 0.42731646, b: 0.6784314, a: 1}
   colorDepth: 4
-  horizonColor: {r: 0, g: 0.22731936, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22731647, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30182916, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30182627, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0
@@ -5003,10 +5003,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3000213104153378598, guid: 7ed0ddb0146cf3847bb312c9adceb667,
+        type: 3}
+      propertyPath: jumpForce
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3797296778430972549, guid: 7ed0ddb0146cf3847bb312c9adceb667,
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4011029791979360831, guid: 7ed0ddb0146cf3847bb312c9adceb667,
+        type: 3}
+      propertyPath: m_text
+      value: 'Hold RMB to take out your camera
+
+
+        Press LMB to take a picture
+
+
+        Use
+        mouse wheel for zoom. A red circle will appear if max zoom is reached.'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ed0ddb0146cf3847bb312c9adceb667, type: 3}
@@ -5016,6 +5033,32 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3000213104523003996}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3000213104523003998 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5621115044057148555, guid: 7ed0ddb0146cf3847bb312c9adceb667,
+    type: 3}
+  m_PrefabInstance: {fileID: 3000213104523003996}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &3000213104523003999
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3000213104523003998}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &3660239261863339577
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5196,6 +5239,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventoryCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6791129047211758017, guid: ac9b6f93ba6ca764c9fde2f8da6b06aa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6791129047211758021, guid: ac9b6f93ba6ca764c9fde2f8da6b06aa,
         type: 3}
@@ -5608,12 +5656,12 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.4273193, b: 0.6784314, a: 1}
+  deepColor: {r: 0, g: 0.42731643, b: 0.6784314, a: 1}
   colorDepth: 4
-  horizonColor: {r: 0, g: 0.2273193, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22731644, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.3018291, a: 0.33}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30182624, a: 0.33}
   shoreStrength: 0.33
   shoreBlend: 1
   shoreDepth: 0
