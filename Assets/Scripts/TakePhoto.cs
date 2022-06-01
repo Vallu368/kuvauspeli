@@ -12,6 +12,7 @@ public class TakePhoto : MonoBehaviour
     [SerializeField] private Animator fadingAnimation;
     [SerializeField] private GameObject cameraUI;
     [SerializeField] private GameObject tutorialText;
+    [SerializeField] private GameObject crosshair;
     public InventoryScript inv;
     public CameraRaycast raycast;
     public bool cameraMode = false;
@@ -61,6 +62,7 @@ public class TakePhoto : MonoBehaviour
     IEnumerator CapturePhoto()
     {
         cameraUI.SetActive(false);
+        crosshair.SetActive(false);
         screenCapture = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
         viewingPhoto = true;
 
@@ -86,7 +88,7 @@ public class TakePhoto : MonoBehaviour
         
         Sprite photoSprite = Sprite.Create(screenCapture, new Rect(0.0f, 0.0f, screenCapture.width, screenCapture.height), new Vector2(0.5f, 0.5f), 100.0f);
         if (raycast.objective == 1)
-        {
+        {   
             inv.AddImageToInventory(raycast.hitObjectID, photoSprite);
         }
 
