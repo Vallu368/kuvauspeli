@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 0.8
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
+  m_Sun: {fileID: 7154580575867511781}
   m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
@@ -1984,12 +1984,12 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.42731652, b: 0.6784314, a: 1}
+  deepColor: {r: 0, g: 0.4273164, b: 0.6784314, a: 1}
   colorDepth: 4
-  horizonColor: {r: 0, g: 0.22731653, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22731641, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30182633, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.3018262, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0
@@ -6401,12 +6401,12 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.4273165, b: 0.6784314, a: 1}
+  deepColor: {r: 0, g: 0.42731637, b: 0.6784314, a: 1}
   colorDepth: 4
-  horizonColor: {r: 0, g: 0.2273165, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22731638, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.3018263, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30182615, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0
@@ -7813,12 +7813,12 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.42731646, b: 0.6784314, a: 1}
+  deepColor: {r: 0, g: 0.42731634, b: 0.6784314, a: 1}
   colorDepth: 4
-  horizonColor: {r: 0, g: 0.22731647, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22731635, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30182627, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30182612, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0
@@ -8437,6 +8437,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4687e2fbfec931f4ba0cf086d9b9e5ea, type: 3}
+--- !u!108 &7154580575867511781 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 7154580575663704072, guid: 4687e2fbfec931f4ba0cf086d9b9e5ea,
+    type: 3}
+  m_PrefabInstance: {fileID: 7154580575867511780}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7350409370602604820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8629,12 +8635,12 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.42731643, b: 0.6784314, a: 1}
+  deepColor: {r: 0, g: 0.4273163, b: 0.6784314, a: 1}
   colorDepth: 4
-  horizonColor: {r: 0, g: 0.22731644, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22731632, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30182624, a: 0.33}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.3018261, a: 0.33}
   shoreStrength: 0.33
   shoreBlend: 1
   shoreDepth: 0
