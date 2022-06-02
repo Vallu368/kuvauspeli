@@ -21,7 +21,13 @@ public class TakePhoto : MonoBehaviour
     private Texture2D screenCapture;
     private bool viewingPhoto;
     public bool takingPhoto;
-    
+
+
+    private void Awake()
+    {
+       camAnim = polaroid.GetComponent<Animator>();
+    }
+
     private void Start()
     {
         tutorialText.SetActive(true);
@@ -34,25 +40,14 @@ public class TakePhoto : MonoBehaviour
         {
             cameraMode = true;
             tutorialText.SetActive(false);
+            AnimFrame();
             polaroid.SetActive(true);
+            camAnim.Play("holdingCam");
         }
-        else 
+        else if (Input.GetMouseButtonUp(1))
+        {
             cameraMode = false;
-
-        //if (!cameraMode)
-        //{
-        //    StartCoroutine(ForAnimYay());
-        //}
-
-        if (Input.GetKeyDown(KeyCode.B))
-        {
             StartCoroutine(ForAnimYay());
-        }
-
-        if (polaroid == true)
-        {
-            polaroid.GetComponent<Animator>().enabled = true;
-            camAnim.SetBool("holding", true);
         }
 
         if (!takingPhoto && cameraMode) 
@@ -88,9 +83,15 @@ public class TakePhoto : MonoBehaviour
     IEnumerator ForAnimYay()
     {
         Debug.Log("okkkkkkkkk");
-        camAnim.SetBool("noCam", true);
-        yield return new WaitForSeconds(1);
-        polaroid.SetActive(false);
+        yield return new WaitForSeconds(0.2f);
+            camAnim.Play("noCam");
+            yield return new WaitForSeconds(1);
+            polaroid.SetActive(false);
+    }
+
+    IEnumerator AnimFrame()
+    {
+        yield return new WaitForEndOfFrame();
     }
 
     IEnumerator CapturePhoto()
