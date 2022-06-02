@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6606205973556372626
 Transform:
@@ -94,10 +94,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8068073526183931155, guid: 7c66edbb5bb76f647a5c651d0de16698,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -7001227113948617949, guid: 7c66edbb5bb76f647a5c651d0de16698,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2177046525909317137, guid: 7c66edbb5bb76f647a5c651d0de16698,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -82358763968010616, guid: 7c66edbb5bb76f647a5c651d0de16698,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7c66edbb5bb76f647a5c651d0de16698,
         type: 3}
       propertyPath: m_Name
       value: Randomhouse2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7c66edbb5bb76f647a5c651d0de16698,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c66edbb5bb76f647a5c651d0de16698, type: 3}
