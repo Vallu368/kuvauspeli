@@ -25,6 +25,7 @@ public class TakePhoto : MonoBehaviour
     private void Start()
     {
         tutorialText.SetActive(true);
+        polaroid.SetActive(false);
     }
 
     private void Update()
@@ -38,9 +39,14 @@ public class TakePhoto : MonoBehaviour
         else 
             cameraMode = false;
 
-        if (!cameraMode)
+        //if (!cameraMode)
+        //{
+        //    StartCoroutine(ForAnimYay());
+        //}
+
+        if (Input.GetKeyDown(KeyCode.B))
         {
-            polaroid.SetActive(false);
+            StartCoroutine(ForAnimYay());
         }
 
         if (polaroid == true)
@@ -77,6 +83,14 @@ public class TakePhoto : MonoBehaviour
                 RemovePhoto(); //left click poistaa kuvan vaikka right click ei olis pohjassa
             }
         }
+    }
+
+    IEnumerator ForAnimYay()
+    {
+        Debug.Log("okkkkkkkkk");
+        camAnim.SetBool("noCam", true);
+        yield return new WaitForSeconds(1);
+        polaroid.SetActive(false);
     }
 
     IEnumerator CapturePhoto()
