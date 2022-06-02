@@ -8,6 +8,7 @@ public class InventoryScript : MonoBehaviour
     public TakePhoto takePhoto;
 
     public List<Image> images;
+    public List<GameObject> inventoryPhotos;
     public GameObject inventoryPanel;
     public bool inventoryOpen;
     public int i;
@@ -65,7 +66,8 @@ public class InventoryScript : MonoBehaviour
 
     public void AddImageToInventory(int id, Sprite sprite)
     {
-        images[id].sprite = sprite; 
+        images[id].sprite = sprite;
+        inventoryPhotos[id].SetActive(true);
         
     }
 }
