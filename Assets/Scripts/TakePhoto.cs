@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class TakePhoto : MonoBehaviour
 {
+    public Animator camAnim;
+    [SerializeField] private GameObject polaroid;
     [SerializeField] private Image photoDisplayArea;
     [SerializeField] private GameObject photoFrame;
     [SerializeField] private GameObject cameraFlash;
@@ -30,14 +32,32 @@ public class TakePhoto : MonoBehaviour
         {
             cameraMode = true;
             tutorialText.SetActive(false);
+            polaroid.SetActive(true);
         }
-        else cameraMode = false;
+        else 
+            cameraMode = false;
+
+        if (!cameraMode)
+        {
+            polaroid.SetActive(false);
+        }
+
+        if (polaroid == true)
+        {
+            polaroid.GetComponent<Animator>().enabled = true;
+            camAnim.SetBool("holding", true);
+        }
+
         if (!takingPhoto && cameraMode) 
         {
             cameraUI.SetActive(true);
+            polaroid.SetActive(true);
         }
-        else cameraUI.SetActive(false);
-        if(cameraMode && Input.GetMouseButtonDown(0)) //jos pidät right click pohjassa ja painat left click otat kuvan, jos kuva jo valmiina ruudulla left click poistaa sen
+        else 
+            cameraUI.SetActive(false);
+
+
+        if (cameraMode && Input.GetMouseButtonDown(0)) //jos pidät right click pohjassa ja painat left click otat kuvan, jos kuva jo valmiina ruudulla left click poistaa sen
         {
             if (!viewingPhoto)
             {
