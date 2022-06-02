@@ -162,12 +162,12 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.42731214, b: 0.6784314, a: 1}
+  deepColor: {r: 0, g: 0.42726088, b: 0.6784314, a: 1}
   colorDepth: 4
-  horizonColor: {r: 0, g: 0.22731212, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22726089, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30182192, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30177066, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0
@@ -231,10 +231,10 @@ MonoBehaviour:
   normalsScale: 0.36
   normalsSpeed: 0.04
   refractionStrength: 0.017
-  waveVisuals: {x: 0.055, y: 7.9, z: 1.38}
-  waveSteepness: 0.055
-  waveLength: 7.9
-  waveSpeed: 1.38
+  waveVisuals: {x: 0.307, y: 2.9, z: 0.59}
+  waveSteepness: 0.307
+  waveLength: 2.9
+  waveSpeed: 0.59
   waveDirections: {x: 0, y: 0.64, z: 1, w: 0.33}
   waveDirection1: 0
   waveDirection2: 0.64
@@ -409,12 +409,12 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.42731217, b: 0.6784314, a: 1}
+  deepColor: {r: 0, g: 0.4272609, b: 0.6784314, a: 1}
   colorDepth: 4
-  horizonColor: {r: 0, g: 0.22731215, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22726092, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30182195, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.3017707, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0
@@ -478,10 +478,10 @@ MonoBehaviour:
   normalsScale: 0.36
   normalsSpeed: 0.04
   refractionStrength: 0.017
-  waveVisuals: {x: 0.055, y: 7.9, z: 1.38}
-  waveSteepness: 0.055
-  waveLength: 7.9
-  waveSpeed: 1.38
+  waveVisuals: {x: 0.307, y: 2.9, z: 0.59}
+  waveSteepness: 0.307
+  waveLength: 2.9
+  waveSpeed: 0.59
   waveDirections: {x: 0, y: 0.64, z: 1, w: 0.33}
   waveDirection1: 0
   waveDirection2: 0.64
@@ -656,12 +656,12 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.4273121, b: 0.6784314, a: 1}
+  deepColor: {r: 0, g: 0.42726085, b: 0.6784314, a: 1}
   colorDepth: 4
-  horizonColor: {r: 0, g: 0.22731209, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22726086, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.3018219, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30177063, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0
@@ -725,10 +725,10 @@ MonoBehaviour:
   normalsScale: 0.36
   normalsSpeed: 0.04
   refractionStrength: 0.017
-  waveVisuals: {x: 0.055, y: 7.9, z: 1.38}
-  waveSteepness: 0.055
-  waveLength: 7.9
-  waveSpeed: 1.38
+  waveVisuals: {x: 0.307, y: 2.9, z: 0.59}
+  waveSteepness: 0.307
+  waveLength: 2.9
+  waveSpeed: 0.59
   waveDirections: {x: 0, y: 0.64, z: 1, w: 0.33}
   waveDirection1: 0
   waveDirection2: 0.64
@@ -1384,12 +1384,12 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.42731205, b: 0.6784314, a: 1}
+  deepColor: {r: 0, g: 0.4272608, b: 0.6784314, a: 1}
   colorDepth: 4
-  horizonColor: {r: 0, g: 0.22731203, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.2272608, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30182183, a: 0.33}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30177057, a: 0.33}
   shoreStrength: 0.33
   shoreBlend: 1
   shoreDepth: 0
@@ -1453,10 +1453,10 @@ MonoBehaviour:
   normalsScale: 0.36
   normalsSpeed: 0.04
   refractionStrength: 0.017
-  waveVisuals: {x: 0.055, y: 7.9, z: 1.38}
-  waveSteepness: 0.055
-  waveLength: 7.9
-  waveSpeed: 1.38
+  waveVisuals: {x: 0.307, y: 2.9, z: 0.59}
+  waveSteepness: 0.307
+  waveLength: 2.9
+  waveSpeed: 0.59
   waveDirections: {x: 0, y: 0.64, z: 1, w: 0.33}
   waveDirection1: 0
   waveDirection2: 0.64
