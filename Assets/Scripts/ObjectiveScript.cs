@@ -6,15 +6,19 @@ public class ObjectiveScript : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject ghostPrefab;
+    public InventoryScript invScript;
     public bool hasGhost;
     public int objectiveNumber = 0;
     private GameObject player;
     private TakePhoto takePhoto;
     private bool isGhostActive;
+    private bool hasTakenPic;
     void Start()
     {
+
         player = GameObject.Find("Player");
         takePhoto = player.GetComponentInChildren<TakePhoto>();
+        invScript = player.GetComponentInChildren<InventoryScript>();
     }
 
     // Update is called once per frame
@@ -37,5 +41,15 @@ public class ObjectiveScript : MonoBehaviour
     {
         isGhostActive = true;
     }
+    public void PicTaken()
+    {
+        if (!hasTakenPic)
+        {
+            invScript.picturesTaken++;
+            hasTakenPic = true;
+        }
+        
+    }
+
 
 }

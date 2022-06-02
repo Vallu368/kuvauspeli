@@ -11,6 +11,7 @@ public class InventoryScript : MonoBehaviour
     public GameObject inventoryPanel;
     public bool inventoryOpen;
     public int i;
+    public int picturesTaken;
 
     GameObject player;
     PlayerMovement playerMovement;
