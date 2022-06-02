@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class TakePhoto : MonoBehaviour
 {
     public Animator camAnim;
+    [SerializeField] public AudioSource camSound;
+
     [SerializeField] private GameObject polaroid;
     [SerializeField] private Image photoDisplayArea;
     [SerializeField] private GameObject photoFrame;
@@ -32,6 +34,8 @@ public class TakePhoto : MonoBehaviour
     {
         tutorialText.SetActive(true);
         polaroid.SetActive(false);
+        camSound = GetComponent<AudioSource>();
+
     }
 
     private void Update()
@@ -64,6 +68,7 @@ public class TakePhoto : MonoBehaviour
             if (!viewingPhoto)
             {
                 takingPhoto = true;
+                camSound.Play();
                 StartCoroutine(CapturePhoto());
             }
             else
