@@ -2138,12 +2138,12 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.42731, b: 0.6784314, a: 1}
+  deepColor: {r: 0, g: 0.42730486, b: 0.6784314, a: 1}
   colorDepth: 4
-  horizonColor: {r: 0, g: 0.22731, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22730488, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30181977, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30181465, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0
@@ -6286,7 +6286,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1802423697}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: -0.65, z: 1.66}
+  m_LocalPosition: {x: 0.876, y: -0.835, z: 1.197}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6419,6 +6419,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 310835043}
     m_Modifications:
+    - target: {fileID: 99880580, guid: 071bc05fa8940b94cbc9b9bc3395afea, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4013199524953504182, guid: 071bc05fa8940b94cbc9b9bc3395afea,
         type: 3}
       propertyPath: m_Name
@@ -6431,18 +6435,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4393946535779296012, guid: 071bc05fa8940b94cbc9b9bc3395afea,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.0778305
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393946535779296012, guid: 071bc05fa8940b94cbc9b9bc3395afea,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.0778305
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393946535779296012, guid: 071bc05fa8940b94cbc9b9bc3395afea,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.0778305
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393946535779296012, guid: 071bc05fa8940b94cbc9b9bc3395afea,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.0000041883
       objectReference: {fileID: 0}
     - target: {fileID: 4393946535779296012, guid: 071bc05fa8940b94cbc9b9bc3395afea,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.11567
       objectReference: {fileID: 0}
     - target: {fileID: 4393946535779296012, guid: 071bc05fa8940b94cbc9b9bc3395afea,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.0025804
       objectReference: {fileID: 0}
     - target: {fileID: 4393946535779296012, guid: 071bc05fa8940b94cbc9b9bc3395afea,
         type: 3}
@@ -6848,12 +6867,12 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.42730996, b: 0.6784314, a: 1}
+  deepColor: {r: 0, g: 0.4273049, b: 0.6784314, a: 1}
   colorDepth: 4
-  horizonColor: {r: 0, g: 0.22730997, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.2273049, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30181974, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30181468, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0
@@ -8344,12 +8363,12 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.42730993, b: 0.6784314, a: 1}
+  deepColor: {r: 0, g: 0.42730495, b: 0.6784314, a: 1}
   colorDepth: 4
-  horizonColor: {r: 0, g: 0.22730994, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22730497, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.3018197, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30181473, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0
@@ -9175,12 +9194,12 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.4273099, b: 0.6784314, a: 1}
+  deepColor: {r: 0, g: 0.42730492, b: 0.6784314, a: 1}
   colorDepth: 4
-  horizonColor: {r: 0, g: 0.22730991, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22730494, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30181968, a: 0.33}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.3018147, a: 0.33}
   shoreStrength: 0.33
   shoreBlend: 1
   shoreDepth: 0
