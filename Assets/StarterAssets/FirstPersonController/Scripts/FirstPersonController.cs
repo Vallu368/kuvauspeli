@@ -74,6 +74,8 @@ namespace StarterAssets
 
 		private const float _threshold = 0.01f;
 
+		//public bool hahmoCanMove = false;
+
 		private bool IsCurrentDeviceMouse
 		{
 			get
@@ -115,6 +117,7 @@ namespace StarterAssets
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
+			//Debug.Log(Grounded);
 		}
 
 		private void LateUpdate()
@@ -215,7 +218,7 @@ namespace StarterAssets
 				if (_input.jump && _jumpTimeoutDelta <= 0.0f)
 				{
 					// the square root of H * -2 * G = how much velocity needed to reach desired height
-					Debug.Log("jump");
+					//Debug.Log("jump");
 					_verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
 				}
 
