@@ -40,7 +40,7 @@ public class TakePhoto : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButton(1)) //jos pid‰t right click pohjassa niin kamerajutut menee p‰‰lle ja voit ottaa kuvia
+        if (!cameraMode && Input.GetMouseButtonDown(1)) //jos pid‰t right click pohjassa niin kamerajutut menee p‰‰lle ja voit ottaa kuvia
         {
             cameraMode = true;
             tutorialText.SetActive(false);
@@ -48,7 +48,7 @@ public class TakePhoto : MonoBehaviour
             polaroid.SetActive(true);
             camAnim.Play("holdingCam");
         }
-        else if (Input.GetMouseButtonUp(1))
+        else if (Input.GetMouseButtonDown(1))
         {
             cameraMode = false;
             StartCoroutine(ForAnimYay());
