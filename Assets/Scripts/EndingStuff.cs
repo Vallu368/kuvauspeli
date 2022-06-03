@@ -26,12 +26,13 @@ public class EndingStuff : MonoBehaviour
     {
         if (collision.gameObject.name == "Bruh")
         {
-            if (inv.picturesTaken == 0)
+            if (inv.picturesTaken == 1)
             {
                 Debug.Log("booop");
                 player = collision.gameObject;
                 StartCoroutine(Teleport());
             }
+            else Debug.Log("not enough pictures taken");
         }
     }
     IEnumerator Teleport()
@@ -42,6 +43,7 @@ public class EndingStuff : MonoBehaviour
         player.transform.position = teleportLocation.transform.position;
         StartCoroutine(FadeOut());
         player.GetComponent<PlayerMovement>().enabled = true;
+        
     }
     IEnumerator FadeIn()
     {
