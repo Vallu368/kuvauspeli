@@ -47,6 +47,8 @@ public class TakePhoto : MonoBehaviour
             AnimFrame();
             polaroid.SetActive(true);
             camAnim.Play("holdingCam");
+
+            
         }
         else if (Input.GetMouseButtonDown(1))
         {
@@ -101,6 +103,10 @@ public class TakePhoto : MonoBehaviour
 
     IEnumerator CapturePhoto()
     {
+        foreach (Transform child in polaroid.transform)
+        {
+            child.GetComponent<MeshRenderer>().enabled = false;
+        }
         cameraUI.SetActive(false);
         crosshair.SetActive(false);
         screenCapture = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
@@ -113,8 +119,12 @@ public class TakePhoto : MonoBehaviour
         screenCapture.ReadPixels(regionToRead, 0, 0, false);
         screenCapture.Apply();
         ShowPhoto();
-        
-        
+        foreach (Transform child in polaroid.transform)
+        {
+            child.GetComponent<MeshRenderer>().enabled = true;
+        }
+
+
     }
     IEnumerator CameraFlashEffect()
     {
