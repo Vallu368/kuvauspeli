@@ -7,6 +7,7 @@ public class EndingStuff : MonoBehaviour
 {
     public InventoryScript inv;
     public GameObject player;
+    public GameObject fadeoutImage;
     public Image image;
     public GameObject teleportLocation;
     private float targetAlpha;
@@ -14,7 +15,8 @@ public class EndingStuff : MonoBehaviour
 
     void Start()
     {
-
+        fadeoutImage = GameObject.Find("Player/CameraCanvas/FadeOutImage");
+        image = fadeoutImage.GetComponent<Image>();
     }
 
     // Update is called once per frame
@@ -37,6 +39,7 @@ public class EndingStuff : MonoBehaviour
     }
     IEnumerator Teleport()
     {
+        
         player.GetComponent<PlayerMovement>().enabled = false;
         StartCoroutine(FadeIn());
         yield return new WaitForSeconds(2f);
@@ -47,7 +50,7 @@ public class EndingStuff : MonoBehaviour
     }
     IEnumerator FadeIn()
     {
-
+        fadeoutImage.SetActive(true);
         targetAlpha = 1.0f;
         Color curColor = image.color;
         while (Mathf.Abs(curColor.a - targetAlpha) > 0.0001f)
@@ -67,5 +70,7 @@ public class EndingStuff : MonoBehaviour
             image.color = curColor;
             yield return null;
         }
+        fadeoutImage.SetActive(false);
     }
+   
 }
