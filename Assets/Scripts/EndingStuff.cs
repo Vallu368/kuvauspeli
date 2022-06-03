@@ -17,6 +17,7 @@ public class EndingStuff : MonoBehaviour
     {
         fadeoutImage = GameObject.Find("Player/CameraCanvas/FadeOutImage");
         image = fadeoutImage.GetComponent<Image>();
+        fadeoutImage.SetActive(false);
     }
 
     // Update is called once per frame
