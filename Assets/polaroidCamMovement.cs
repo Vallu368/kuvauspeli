@@ -6,16 +6,17 @@ public class polaroidCamMovement : MonoBehaviour
 {
 
     public Transform polaroidPosition;
-    public GameObject camRot;
+  //  public GameObject camRot;
 
-    private void Start()
-    {
-        camRot = GameObject.Find("Player/CameraHolder/PlayerCam");
-    }
+    //private void Start()
+    //{
+    //    camRot = GameObject.Find("Player/CameraHolder/PlayerCam");
+    //}
 
     private void Update()
     {
-        transform.position = polaroidPosition.position;
-        transform.rotation = camRot.transform.rotation;
+        transform.SetParent(polaroidPosition);
+        //transform.position = polaroidPosition.position;
+        //transform.rotation = camRot.transform.rotation;
     }
 }
