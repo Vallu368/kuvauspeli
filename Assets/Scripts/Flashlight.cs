@@ -1,15 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class Flashlight : MonoBehaviour
 {
+
     public GameObject cam;
     public GameObject light;
     public bool isActive = false;
     void Start()
     {
-        cam = GameObject.Find("Player/CameraHolder/PlayerCam");
+        cam = GameObject.Find("Player/Bruh/CameraPosition");
         light = GameObject.Find("Player/Flashlight");
         light.SetActive(false);
     }
