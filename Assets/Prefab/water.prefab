@@ -162,17 +162,17 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.42726088, b: 0.6784314, a: 1}
+  deepColor: {r: 0, g: 0.4272912, b: 0.6784314, a: 1}
   colorDepth: 4
-  horizonColor: {r: 0, g: 0.22726089, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22729123, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30177066, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.301801, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0
   waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.20391992, g: 0.30980214, b: 0.517647, a: 0}
+  underwaterColor: {r: 0.2039198, g: 0.309802, b: 0.517647, a: 0}
   underwaterColorStrength: 0
   underwaterRefractionStrength: 0.099
   surfaceFoamTexture: {fileID: 2800000, guid: d3b0d77dfe711a04c8ff18ecc260aa66, type: 3}
@@ -231,10 +231,10 @@ MonoBehaviour:
   normalsScale: 0.36
   normalsSpeed: 0.04
   refractionStrength: 0.017
-  waveVisuals: {x: 0.307, y: 2.9, z: 0.59}
-  waveSteepness: 0.307
-  waveLength: 2.9
-  waveSpeed: 0.59
+  waveVisuals: {x: 0.055, y: 7.9, z: 1.38}
+  waveSteepness: 0.055
+  waveLength: 7.9
+  waveSpeed: 1.38
   waveDirections: {x: 0, y: 0.64, z: 1, w: 0.33}
   waveDirection1: 0
   waveDirection2: 0.64
@@ -409,12 +409,12 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.4272609, b: 0.6784314, a: 1}
+  deepColor: {r: 0, g: 0.42729366, b: 0.6784314, a: 1}
   colorDepth: 4
-  horizonColor: {r: 0, g: 0.22726092, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22729367, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.3017707, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30180347, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0
@@ -478,10 +478,10 @@ MonoBehaviour:
   normalsScale: 0.36
   normalsSpeed: 0.04
   refractionStrength: 0.017
-  waveVisuals: {x: 0.307, y: 2.9, z: 0.59}
-  waveSteepness: 0.307
-  waveLength: 2.9
-  waveSpeed: 0.59
+  waveVisuals: {x: 0.055, y: 7.9, z: 1.38}
+  waveSteepness: 0.055
+  waveLength: 7.9
+  waveSpeed: 1.38
   waveDirections: {x: 0, y: 0.64, z: 1, w: 0.33}
   waveDirection1: 0
   waveDirection2: 0.64
@@ -656,12 +656,12 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.42726085, b: 0.6784314, a: 1}
+  deepColor: {r: 0, g: 0.42729357, b: 0.6784314, a: 1}
   colorDepth: 4
-  horizonColor: {r: 0, g: 0.22726086, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22729358, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30177063, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30180338, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0
@@ -725,10 +725,10 @@ MonoBehaviour:
   normalsScale: 0.36
   normalsSpeed: 0.04
   refractionStrength: 0.017
-  waveVisuals: {x: 0.307, y: 2.9, z: 0.59}
-  waveSteepness: 0.307
-  waveLength: 2.9
-  waveSpeed: 0.59
+  waveVisuals: {x: 0.055, y: 7.9, z: 1.38}
+  waveSteepness: 0.055
+  waveLength: 7.9
+  waveSpeed: 1.38
   waveDirections: {x: 0, y: 0.64, z: 1, w: 0.33}
   waveDirection1: 0
   waveDirection2: 0.64
@@ -1239,7 +1239,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &3646748431131113415
 Transform:
@@ -1383,37 +1383,37 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
-  shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.4272608, b: 0.6784314, a: 1}
+  shallowColor: {r: 0.1673573, g: 0.50803417, b: 0.8301887, a: 0.36078432}
+  deepColor: {r: 0, g: 0.019451717, b: 0.75471693, a: 0.08627451}
   colorDepth: 4
-  horizonColor: {r: 0, g: 0.2272608, b: 0.8, a: 1}
-  horizonDistance: 20
-  shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30177057, a: 0.33}
-  shoreStrength: 0.33
+  horizonColor: {r: 0, g: 0.6012447, b: 0.8, a: 0.2784314}
+  horizonDistance: 13.1
+  shoreFade: 0.06
+  shoreColor: {r: 0.8584906, g: 0.8467035, b: 0.6106621, a: 0.04}
+  shoreStrength: 0.04
   shoreBlend: 1
   shoreDepth: 0
   waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.20391989, g: 0.30980211, b: 0.517647, a: 0}
+  underwaterColor: {r: 0.20391354, g: 0.3097954, b: 0.517647, a: 0}
   underwaterColorStrength: 0
   underwaterRefractionStrength: 0.099
-  surfaceFoamTexture: {fileID: 2800000, guid: d3b0d77dfe711a04c8ff18ecc260aa66, type: 3}
-  surfaceFoamSampling: {x: 0.62, y: 0}
-  surfaceFoamCutoff: 0.62
+  surfaceFoamTexture: {fileID: 2800000, guid: ab507ff7ff37d954da98b07bf0bb152e, type: 3}
+  surfaceFoamSampling: {x: 0.144, y: 0}
+  surfaceFoamCutoff: 0.144
   surfaceFoamDistortion: 0
-  surfaceFoamBlend: 1
-  surfaceFoamColor1: {r: 1, g: 1, b: 1, a: 0.3215686}
-  surfaceFoamColor2: {r: 1, g: 1, b: 1, a: 0.7294118}
-  surfaceFoamMovement: {x: 0.7, y: 0, z: 0.47, w: 0.01}
-  surfaceFoamDirection1: 0.7
+  surfaceFoamBlend: 2.89
+  surfaceFoamColor1: {r: 1, g: 1, b: 1, a: 0.06666667}
+  surfaceFoamColor2: {r: 1, g: 1, b: 1, a: 0.1764706}
+  surfaceFoamMovement: {x: 0.16, y: 0, z: 0.47, w: 0.01}
+  surfaceFoamDirection1: 0.16
   surfaceFoamDirection2: 0.47
   surfaceFoamSpeed1: 0
   surfaceFoamSpeed2: 0.01
-  surfaceFoamTilingAndOffset: {x: -1, y: -1, z: 0.57, w: 0.22}
-  surfaceFoamOffsetX: -1
-  surfaceFoamOffsetY: -1
-  surfaceFoamScale1: 0.57
-  surfaceFoamScale2: 0.22
+  surfaceFoamTilingAndOffset: {x: -1.76, y: -1.29, z: 1.03, w: 0.78}
+  surfaceFoamOffsetX: -1.76
+  surfaceFoamOffsetY: -1.29
+  surfaceFoamScale1: 1.03
+  surfaceFoamScale2: 0.78
   enableSurfaceFoam: 1
   surfaceFoamHeightMask: 0
   surfaceFoamHeightMaskSmoothness: 0
@@ -1426,17 +1426,17 @@ MonoBehaviour:
   intersectionFoamDepth: 0.72
   intersectionFoamTexture: {fileID: 2800000, guid: 772031b03d9d46e4ab03e15c8e17718c,
     type: 3}
-  intersectionFoamColor: {r: 1, g: 1, b: 1, a: 1}
+  intersectionFoamColor: {r: 0.62892485, g: 0.8099994, b: 0.8396226, a: 0.42745098}
   intersectionFoamMovement: {x: 0, y: 0}
   intersectionFoamDirection: 0
   intersectionFoamSpeed: 0
-  intersectionFoamScale: 0.19
+  intersectionFoamScale: 0.17
   intersectionFoamSampling: {x: 1, y: 0}
   intersectionFoamCutoff: 1
   intersectionFoamDistortion: 0
   enableIntersectionEffects: 1
-  intersectionFoamBlend: 1
-  intersectionWaterBlend: 0
+  intersectionFoamBlend: 0.226
+  intersectionWaterBlend: 0.186
   shoreFoamSpeed: 0
   shoreFoamWidth: 0
   shoreFoamFrequency: 0
@@ -1453,10 +1453,10 @@ MonoBehaviour:
   normalsScale: 0.36
   normalsSpeed: 0.04
   refractionStrength: 0.017
-  waveVisuals: {x: 0.307, y: 2.9, z: 0.59}
-  waveSteepness: 0.307
-  waveLength: 2.9
-  waveSpeed: 0.59
+  waveVisuals: {x: 0.052, y: 2.6, z: 1.51}
+  waveSteepness: 0.052
+  waveLength: 2.6
+  waveSpeed: 1.51
   waveDirections: {x: 0, y: 0.64, z: 1, w: 0.33}
   waveDirection1: 0
   waveDirection2: 0.64
