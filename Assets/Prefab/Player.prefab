@@ -942,6 +942,11 @@ PrefabInstance:
       propertyPath: takePhoto
       value: 
       objectReference: {fileID: 5621115044057148568}
+    - target: {fileID: 3000213104523004016, guid: 4bdf79ad727b69d4795011409c61235c,
+        type: 3}
+      propertyPath: virtualCamera
+      value: 
+      objectReference: {fileID: 1427299529}
     - target: {fileID: 9179175161901404290, guid: 4bdf79ad727b69d4795011409c61235c,
         type: 3}
       propertyPath: orientation

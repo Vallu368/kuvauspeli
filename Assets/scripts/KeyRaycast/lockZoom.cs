@@ -1,28 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class lockZoom : MonoBehaviour
 {
-    [SerializeField] private Camera mainCam;
+    //https://www.youtube.com/watch?v=w0AOGeqOnFY&list=LL&index=282 coconut
+
+    //[SerializeField] private Camera mainCam;
     [SerializeField] private GameObject maxZoomText;
 
     private float scrollSpeed = 50;
 
+    public CinemachineVirtualCamera virtualCamera;
+
     private void Update()
     {
-
-        if (mainCam.fieldOfView <= 60)
+        if (virtualCamera.m_Lens.FieldOfView <= 60)
         {
-            mainCam.fieldOfView -= Input.GetAxis("Mouse ScrollWheel") * scrollSpeed;
+            virtualCamera.m_Lens.FieldOfView -= Input.GetAxis("Mouse ScrollWheel") * scrollSpeed;
         }
-        else mainCam.fieldOfView = 60;
+        else virtualCamera.m_Lens.FieldOfView = 60;
 
-        if (mainCam.fieldOfView >= 25)
+        if (virtualCamera.m_Lens.FieldOfView >= 25)
         {
-            mainCam.fieldOfView -= Input.GetAxis("Mouse ScrollWheel") * scrollSpeed;
+            virtualCamera.m_Lens.FieldOfView -= Input.GetAxis("Mouse ScrollWheel") * scrollSpeed;
         }
-        else mainCam.fieldOfView = 25;
+        else virtualCamera.m_Lens.FieldOfView = 25;
 
 
         //if (mainCam.fieldOfView < 60)
@@ -34,7 +38,7 @@ public class lockZoom : MonoBehaviour
         //    }
         //}
 
-        if(mainCam.fieldOfView <= 33)
+        if(virtualCamera.m_Lens.FieldOfView <= 33)
         {
             maxZoomText.SetActive(true);
         }
