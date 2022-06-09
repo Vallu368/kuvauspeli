@@ -16,17 +16,17 @@ public class lockZoom : MonoBehaviour
 
     private void Update()
     {
-        if (virtualCamera.m_Lens.FieldOfView <= 60)
+        if (virtualCamera.m_Lens.FieldOfView <= 45)
         {
             virtualCamera.m_Lens.FieldOfView -= Input.GetAxis("Mouse ScrollWheel") * scrollSpeed;
         }
-        else virtualCamera.m_Lens.FieldOfView = 60;
+        else virtualCamera.m_Lens.FieldOfView = 45;
 
-        if (virtualCamera.m_Lens.FieldOfView >= 25)
+        if (virtualCamera.m_Lens.FieldOfView >= 20)
         {
             virtualCamera.m_Lens.FieldOfView -= Input.GetAxis("Mouse ScrollWheel") * scrollSpeed;
         }
-        else virtualCamera.m_Lens.FieldOfView = 25;
+        else virtualCamera.m_Lens.FieldOfView = 20;
 
 
         //if (mainCam.fieldOfView < 60)
