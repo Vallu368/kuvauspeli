@@ -91,7 +91,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 206375797253734535}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16629e6f345891348b53ecc2ace028bb, type: 3}
   m_Name: 
@@ -161,37 +161,37 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
-  shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.4272912, b: 0.6784314, a: 1}
+  shallowColor: {r: 0.16735613, g: 0.50803417, b: 0.8301887, a: 0.36078432}
+  deepColor: {r: 0, g: 0.019451717, b: 0.75471693, a: 0.08627451}
   colorDepth: 4
-  horizonColor: {r: 0, g: 0.22729123, b: 0.8, a: 1}
-  horizonDistance: 20
-  shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.301801, a: 0}
+  horizonColor: {r: 0, g: 0.6012447, b: 0.8, a: 0.2784314}
+  horizonDistance: 13.1
+  shoreFade: 0.06
+  shoreColor: {r: 0.8584906, g: 0.8467035, b: 0.6106621, a: 0.04}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0
   waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.2039198, g: 0.309802, b: 0.517647, a: 0}
+  underwaterColor: {r: 0.2039136, g: 0.30979547, b: 0.517647, a: 0}
   underwaterColorStrength: 0
   underwaterRefractionStrength: 0.099
-  surfaceFoamTexture: {fileID: 2800000, guid: d3b0d77dfe711a04c8ff18ecc260aa66, type: 3}
-  surfaceFoamSampling: {x: 0.62, y: 0}
-  surfaceFoamCutoff: 0.62
+  surfaceFoamTexture: {fileID: 2800000, guid: ab507ff7ff37d954da98b07bf0bb152e, type: 3}
+  surfaceFoamSampling: {x: 0.144, y: 0}
+  surfaceFoamCutoff: 0.144
   surfaceFoamDistortion: 0
-  surfaceFoamBlend: 1
-  surfaceFoamColor1: {r: 1, g: 1, b: 1, a: 0.3215686}
-  surfaceFoamColor2: {r: 1, g: 1, b: 1, a: 0.7294118}
-  surfaceFoamMovement: {x: 0.7, y: 0, z: 0.47, w: 0.01}
-  surfaceFoamDirection1: 0.7
+  surfaceFoamBlend: 2.89
+  surfaceFoamColor1: {r: 1, g: 1, b: 1, a: 0.06666667}
+  surfaceFoamColor2: {r: 1, g: 1, b: 1, a: 0.1764706}
+  surfaceFoamMovement: {x: 0.16, y: 0, z: 0.47, w: 0.01}
+  surfaceFoamDirection1: 0.16
   surfaceFoamDirection2: 0.47
   surfaceFoamSpeed1: 0
   surfaceFoamSpeed2: 0.01
-  surfaceFoamTilingAndOffset: {x: -1, y: -1, z: 0.57, w: 0.22}
-  surfaceFoamOffsetX: -1
-  surfaceFoamOffsetY: -1
-  surfaceFoamScale1: 0.57
-  surfaceFoamScale2: 0.22
+  surfaceFoamTilingAndOffset: {x: -1.76, y: -1.29, z: 1.03, w: 0.78}
+  surfaceFoamOffsetX: -1.76
+  surfaceFoamOffsetY: -1.29
+  surfaceFoamScale1: 1.03
+  surfaceFoamScale2: 0.78
   enableSurfaceFoam: 1
   surfaceFoamHeightMask: 0
   surfaceFoamHeightMaskSmoothness: 0
@@ -231,10 +231,10 @@ MonoBehaviour:
   normalsScale: 0.36
   normalsSpeed: 0.04
   refractionStrength: 0.017
-  waveVisuals: {x: 0.055, y: 7.9, z: 1.38}
-  waveSteepness: 0.055
-  waveLength: 7.9
-  waveSpeed: 1.38
+  waveVisuals: {x: 0.052, y: 2.6, z: 1.51}
+  waveSteepness: 0.052
+  waveLength: 2.6
+  waveSpeed: 1.51
   waveDirections: {x: 0, y: 0.64, z: 1, w: 0.33}
   waveDirection1: 0
   waveDirection2: 0.64
@@ -338,7 +338,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4367774131917847704}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16629e6f345891348b53ecc2ace028bb, type: 3}
   m_Name: 
@@ -408,37 +408,37 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
-  shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.42729366, b: 0.6784314, a: 1}
+  shallowColor: {r: 0.16735613, g: 0.50803417, b: 0.8301887, a: 0.36078432}
+  deepColor: {r: 0, g: 0.019451717, b: 0.75471693, a: 0.08627451}
   colorDepth: 4
-  horizonColor: {r: 0, g: 0.22729367, b: 0.8, a: 1}
-  horizonDistance: 20
-  shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30180347, a: 0}
+  horizonColor: {r: 0, g: 0.6012447, b: 0.8, a: 0.2784314}
+  horizonDistance: 13.1
+  shoreFade: 0.06
+  shoreColor: {r: 0.8584906, g: 0.8467035, b: 0.6106621, a: 0.04}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0
   waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.20391989, g: 0.30980211, b: 0.517647, a: 0}
+  underwaterColor: {r: 0.20391357, g: 0.30979544, b: 0.517647, a: 0}
   underwaterColorStrength: 0
   underwaterRefractionStrength: 0.099
-  surfaceFoamTexture: {fileID: 2800000, guid: d3b0d77dfe711a04c8ff18ecc260aa66, type: 3}
-  surfaceFoamSampling: {x: 0.62, y: 0}
-  surfaceFoamCutoff: 0.62
+  surfaceFoamTexture: {fileID: 2800000, guid: ab507ff7ff37d954da98b07bf0bb152e, type: 3}
+  surfaceFoamSampling: {x: 0.144, y: 0}
+  surfaceFoamCutoff: 0.144
   surfaceFoamDistortion: 0
-  surfaceFoamBlend: 1
-  surfaceFoamColor1: {r: 1, g: 1, b: 1, a: 0.3215686}
-  surfaceFoamColor2: {r: 1, g: 1, b: 1, a: 0.7294118}
-  surfaceFoamMovement: {x: 0.7, y: 0, z: 0.47, w: 0.01}
-  surfaceFoamDirection1: 0.7
+  surfaceFoamBlend: 2.89
+  surfaceFoamColor1: {r: 1, g: 1, b: 1, a: 0.06666667}
+  surfaceFoamColor2: {r: 1, g: 1, b: 1, a: 0.1764706}
+  surfaceFoamMovement: {x: 0.16, y: 0, z: 0.47, w: 0.01}
+  surfaceFoamDirection1: 0.16
   surfaceFoamDirection2: 0.47
   surfaceFoamSpeed1: 0
   surfaceFoamSpeed2: 0.01
-  surfaceFoamTilingAndOffset: {x: -1, y: -1, z: 0.57, w: 0.22}
-  surfaceFoamOffsetX: -1
-  surfaceFoamOffsetY: -1
-  surfaceFoamScale1: 0.57
-  surfaceFoamScale2: 0.22
+  surfaceFoamTilingAndOffset: {x: -1.76, y: -1.29, z: 1.03, w: 0.78}
+  surfaceFoamOffsetX: -1.76
+  surfaceFoamOffsetY: -1.29
+  surfaceFoamScale1: 1.03
+  surfaceFoamScale2: 0.78
   enableSurfaceFoam: 1
   surfaceFoamHeightMask: 0
   surfaceFoamHeightMaskSmoothness: 0
@@ -478,10 +478,10 @@ MonoBehaviour:
   normalsScale: 0.36
   normalsSpeed: 0.04
   refractionStrength: 0.017
-  waveVisuals: {x: 0.055, y: 7.9, z: 1.38}
-  waveSteepness: 0.055
-  waveLength: 7.9
-  waveSpeed: 1.38
+  waveVisuals: {x: 0.052, y: 2.6, z: 1.51}
+  waveSteepness: 0.052
+  waveLength: 2.6
+  waveSpeed: 1.51
   waveDirections: {x: 0, y: 0.64, z: 1, w: 0.33}
   waveDirection1: 0
   waveDirection2: 0.64
@@ -585,7 +585,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4926064125513059441}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16629e6f345891348b53ecc2ace028bb, type: 3}
   m_Name: 
@@ -655,37 +655,37 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
-  shallowColor: {r: 0, g: 0.6313726, b: 1, a: 1}
-  deepColor: {r: 0, g: 0.42729357, b: 0.6784314, a: 1}
+  shallowColor: {r: 0.16735613, g: 0.50803417, b: 0.8301887, a: 0.36078432}
+  deepColor: {r: 0, g: 0.019451717, b: 0.75471693, a: 0.08627451}
   colorDepth: 4
-  horizonColor: {r: 0, g: 0.22729358, b: 0.8, a: 1}
-  horizonDistance: 20
-  shoreFade: 0
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30180338, a: 0}
+  horizonColor: {r: 0, g: 0.6012447, b: 0.8, a: 0.2784314}
+  horizonDistance: 13.1
+  shoreFade: 0.06
+  shoreColor: {r: 0.8584906, g: 0.8467035, b: 0.6106621, a: 0.04}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0
   waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.20391977, g: 0.30980197, b: 0.517647, a: 0}
+  underwaterColor: {r: 0.20391363, g: 0.3097955, b: 0.517647, a: 0}
   underwaterColorStrength: 0
   underwaterRefractionStrength: 0.099
-  surfaceFoamTexture: {fileID: 2800000, guid: d3b0d77dfe711a04c8ff18ecc260aa66, type: 3}
-  surfaceFoamSampling: {x: 0.62, y: 0}
-  surfaceFoamCutoff: 0.62
+  surfaceFoamTexture: {fileID: 2800000, guid: ab507ff7ff37d954da98b07bf0bb152e, type: 3}
+  surfaceFoamSampling: {x: 0.144, y: 0}
+  surfaceFoamCutoff: 0.144
   surfaceFoamDistortion: 0
-  surfaceFoamBlend: 1
-  surfaceFoamColor1: {r: 1, g: 1, b: 1, a: 0.3215686}
-  surfaceFoamColor2: {r: 1, g: 1, b: 1, a: 0.7294118}
-  surfaceFoamMovement: {x: 0.7, y: 0, z: 0.47, w: 0.01}
-  surfaceFoamDirection1: 0.7
+  surfaceFoamBlend: 2.89
+  surfaceFoamColor1: {r: 1, g: 1, b: 1, a: 0.06666667}
+  surfaceFoamColor2: {r: 1, g: 1, b: 1, a: 0.1764706}
+  surfaceFoamMovement: {x: 0.16, y: 0, z: 0.47, w: 0.01}
+  surfaceFoamDirection1: 0.16
   surfaceFoamDirection2: 0.47
   surfaceFoamSpeed1: 0
   surfaceFoamSpeed2: 0.01
-  surfaceFoamTilingAndOffset: {x: -1, y: -1, z: 0.57, w: 0.22}
-  surfaceFoamOffsetX: -1
-  surfaceFoamOffsetY: -1
-  surfaceFoamScale1: 0.57
-  surfaceFoamScale2: 0.22
+  surfaceFoamTilingAndOffset: {x: -1.76, y: -1.29, z: 1.03, w: 0.78}
+  surfaceFoamOffsetX: -1.76
+  surfaceFoamOffsetY: -1.29
+  surfaceFoamScale1: 1.03
+  surfaceFoamScale2: 0.78
   enableSurfaceFoam: 1
   surfaceFoamHeightMask: 0
   surfaceFoamHeightMaskSmoothness: 0
@@ -725,10 +725,10 @@ MonoBehaviour:
   normalsScale: 0.36
   normalsSpeed: 0.04
   refractionStrength: 0.017
-  waveVisuals: {x: 0.055, y: 7.9, z: 1.38}
-  waveSteepness: 0.055
-  waveLength: 7.9
-  waveSpeed: 1.38
+  waveVisuals: {x: 0.052, y: 2.6, z: 1.51}
+  waveSteepness: 0.052
+  waveLength: 2.6
+  waveSpeed: 1.51
   waveDirections: {x: 0, y: 0.64, z: 1, w: 0.33}
   waveDirection1: 0
   waveDirection2: 0.64
@@ -1313,7 +1313,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7952148040599058803}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16629e6f345891348b53ecc2ace028bb, type: 3}
   m_Name: 
@@ -1383,7 +1383,7 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
-  shallowColor: {r: 0.1673573, g: 0.50803417, b: 0.8301887, a: 0.36078432}
+  shallowColor: {r: 0.16735616, g: 0.50803417, b: 0.8301887, a: 0.36078432}
   deepColor: {r: 0, g: 0.019451717, b: 0.75471693, a: 0.08627451}
   colorDepth: 4
   horizonColor: {r: 0, g: 0.6012447, b: 0.8, a: 0.2784314}
