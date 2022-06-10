@@ -87,6 +87,68 @@ MonoBehaviour:
   m_AmplitudeGain: 0.5
   m_FrequencyGain: 0.3
   mNoiseOffsets: {x: 0, y: 0, z: 0}
+--- !u!1 &476504027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 476504028}
+  - component: {fileID: 476504030}
+  - component: {fileID: 476504029}
+  m_Layer: 0
+  m_Name: Test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &476504028
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476504027}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7596606970262464321}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &476504030
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476504027}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5185931, y: 1, z: 1.3803916}
+  m_Center: {x: -0.04970762, y: 0, z: 0.0269382}
+--- !u!54 &476504029
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476504027}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1427299527
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,7 +174,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1427299527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.060000002, z: 0.338}
+  m_LocalPosition: {x: 0.00000064074993, y: -0.059999943, z: 0.33799955}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -611,7 +673,7 @@ GameObject:
   - component: {fileID: 7326599236798379405}
   - component: {fileID: 4011029791979360831}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TutorialText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -665,14 +727,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Hold RMB to take out your camera
-
-
-    Press LMB to take a picture
-
-
-    Use
-    mouse wheel for zoom. A red circle will appear if max zoom is reached.'
+  m_text: Press I to open the inventory
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -952,6 +1007,21 @@ PrefabInstance:
       propertyPath: orientation
       value: 
       objectReference: {fileID: 3000213103769314313}
+    - target: {fileID: 9179175161901404291, guid: 4bdf79ad727b69d4795011409c61235c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.00000064074993
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179175161901404291, guid: 4bdf79ad727b69d4795011409c61235c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.059999943
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179175161901404291, guid: 4bdf79ad727b69d4795011409c61235c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.33799955
+      objectReference: {fileID: 0}
     - target: {fileID: 9179175162657461496, guid: 4bdf79ad727b69d4795011409c61235c,
         type: 3}
       propertyPath: m_RootOrder
@@ -1161,6 +1231,7 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1045030841, guid: d5828c2aeedcc584991cbcf81ccd874c, type: 3}
     - {fileID: 3426885531818293069, guid: d5828c2aeedcc584991cbcf81ccd874c, type: 3}
+    - {fileID: 1045030838, guid: d5828c2aeedcc584991cbcf81ccd874c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d5828c2aeedcc584991cbcf81ccd874c, type: 3}
 --- !u!4 &3000213103769314313 stripped
 Transform:
@@ -1220,6 +1291,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  tutorialText: {fileID: 0}
   inventoryPhotos:
   - {fileID: 0}
   - {fileID: 0}

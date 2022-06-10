@@ -8,6 +8,7 @@ public class InventoryScript : MonoBehaviour
     public TakePhoto takePhoto;
 
     public List<Image> images;
+    public GameObject tutorialText;
     public List<GameObject> inventoryPhotos;
     public GameObject inventoryPanel;
     public bool inventoryOpen;
@@ -22,6 +23,7 @@ public class InventoryScript : MonoBehaviour
     {
         inventoryPanel.SetActive(false);
         inventoryOpen = false;
+        tutorialText = GameObject.Find("Player/CameraCanvas/TutorialText");
 
         player = GameObject.FindGameObjectWithTag("Player");
         playerMovement = player.GetComponentInChildren<PlayerMovement>();
@@ -37,6 +39,7 @@ public class InventoryScript : MonoBehaviour
         {
             if (inventoryOpen == false)
             {
+                tutorialText.SetActive(false);
                 inventoryPanel.SetActive(true);
                 inventoryOpen = true;
                 Cursor.lockState = CursorLockMode.None;   //cursor ei lukittu

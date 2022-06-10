@@ -15,7 +15,6 @@ public class TakePhoto : MonoBehaviour
     [SerializeField] private float flashTime;
     [SerializeField] private Animator fadingAnimation;
     [SerializeField] private GameObject cameraUI;
-    [SerializeField] private GameObject tutorialText;
     [SerializeField] private GameObject crosshair;
     public InventoryScript inv;
     public CameraRaycast raycast;
@@ -32,7 +31,6 @@ public class TakePhoto : MonoBehaviour
 
     private void Start()
     {
-        tutorialText.SetActive(true);
         polaroid.SetActive(false);
         camSound = GetComponent<AudioSource>();
 
@@ -43,7 +41,6 @@ public class TakePhoto : MonoBehaviour
         if (!cameraMode && Input.GetMouseButtonDown(1)) //jos pid‰t right click pohjassa niin kamerajutut menee p‰‰lle ja voit ottaa kuvia
         {
             cameraMode = true;
-            tutorialText.SetActive(false);
             AnimFrame();
             polaroid.SetActive(true);
             camAnim.Play("holdingCam");
