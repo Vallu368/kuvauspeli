@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7265816007378242174}
+  - {fileID: 8427184003427525270}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -47,7 +47,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!1001 &7160692985554660757
+--- !u!1001 &8320935012641506685
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -113,22 +113,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1eafdc583c10f34449f7ad84b559f296, type: 2}
+      objectReference: {fileID: 2100000, guid: 9697634227cf0e24ca68d57be9cc26d4, type: 2}
     - target: {fileID: 919132149155446097, guid: 33af8adbff3603f4eaf07dd8aeb5a5b9,
         type: 3}
       propertyPath: m_Name
       value: kivi3
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 33af8adbff3603f4eaf07dd8aeb5a5b9,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33af8adbff3603f4eaf07dd8aeb5a5b9, type: 3}
---- !u!4 &7265816007378242174 stripped
+--- !u!4 &8427184003427525270 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 33af8adbff3603f4eaf07dd8aeb5a5b9,
     type: 3}
-  m_PrefabInstance: {fileID: 7160692985554660757}
+  m_PrefabInstance: {fileID: 8320935012641506685}
   m_PrefabAsset: {fileID: 0}
