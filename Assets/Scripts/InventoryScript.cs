@@ -16,7 +16,6 @@ public class InventoryScript : MonoBehaviour
     public int picturesTaken;
 
     GameObject player;
-    PlayerMovement playerMovement;
     PlayerCam cam;
     TakePhoto photo;
     void Start()
@@ -26,7 +25,6 @@ public class InventoryScript : MonoBehaviour
         tutorialText = GameObject.Find("Player/CameraCanvas/TutorialText");
 
         player = GameObject.FindGameObjectWithTag("Player");
-        playerMovement = player.GetComponentInChildren<PlayerMovement>();
         cam = player.GetComponentInChildren<PlayerCam>();
         photo = player.GetComponentInChildren<TakePhoto>();
     }
@@ -43,10 +41,8 @@ public class InventoryScript : MonoBehaviour
                 inventoryPanel.SetActive(true);
                 inventoryOpen = true;
                 Cursor.lockState = CursorLockMode.None;   //cursor ei lukittu
-                Cursor.visible = true;
-                playerMovement.canPlayerMove = false;
+                Cursor.visible = true;  
                 cam.canPlayerMove = false;
-                playerMovement.enabled = false;
                 photo.enabled = false;
                 
                 
@@ -58,9 +54,7 @@ public class InventoryScript : MonoBehaviour
                 inventoryOpen = false;
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
-                playerMovement.canPlayerMove = true;
                 cam.canPlayerMove = true;
-                playerMovement.enabled = true;
                 photo.enabled = true;
             }
         }
