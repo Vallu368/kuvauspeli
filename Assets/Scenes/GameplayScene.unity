@@ -9549,7 +9549,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _keyInventory
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1933199414}
     - target: {fileID: 5970562724239249071, guid: 5212a330dad5b354795ca44ce49bf0c4,
         type: 3}
       propertyPath: m_LocalScale.y
