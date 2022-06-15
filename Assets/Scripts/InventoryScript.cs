@@ -15,11 +15,14 @@ public class InventoryScript : MonoBehaviour
     public int i;
     public int picturesTaken;
 
+    GameObject fCam;
+
     GameObject player;
     PlayerCam cam;
     TakePhoto photo;
     void Start()
     {
+        fCam = GameObject.Find("Player/FollowCam");
         inventoryPanel.SetActive(false);
         inventoryOpen = false;
         tutorialText = GameObject.Find("Player/CameraCanvas/TutorialText");
@@ -37,6 +40,7 @@ public class InventoryScript : MonoBehaviour
         {
             if (inventoryOpen == false)
             {
+                fCam.SetActive(false);
                 tutorialText.SetActive(false);
                 inventoryPanel.SetActive(true);
                 inventoryOpen = true;
@@ -50,6 +54,7 @@ public class InventoryScript : MonoBehaviour
             }
             else
             {
+                fCam.SetActive(true);
                 inventoryPanel.SetActive(false);
                 inventoryOpen = false;
                 Cursor.lockState = CursorLockMode.Locked;

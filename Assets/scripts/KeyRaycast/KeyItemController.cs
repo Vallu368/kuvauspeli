@@ -8,6 +8,7 @@ namespace KeySystem
     {
         [SerializeField] private bool purpleDoor = false;
         [SerializeField] private bool greenKey = false;
+        [SerializeField] private bool redKey = false;
 
         [SerializeField] private KeyInventory _keyInventory = null;
 
@@ -28,6 +29,11 @@ namespace KeySystem
                 doorObject.PlayAnimation();
             }
             else if (greenKey)
+            {
+                _keyInventory.hasKey = true;
+                gameObject.SetActive(false);
+            }
+            else if (redKey)
             {
                 _keyInventory.hasKey = true;
                 gameObject.SetActive(false);
