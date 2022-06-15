@@ -16,6 +16,10 @@ namespace StarterAssets
 		public float MoveSpeed = 4.0f;
 		[Tooltip("Sprint speed of the character in m/s")]
 		public float SprintSpeed = 6.0f;
+		[Tooltip("Crouch speed of the character in m/s")]
+		public float CrouchSpeed = 2.0f;
+		[Tooltip("Speed at which character crouches and uncrouches")]
+		public float CrouchMaxDistanceDelta;
 		[Tooltip("Rotation speed of the character")]
 		public float RotationSpeed = 1.0f;
 		[Tooltip("Acceleration and deceleration")]
@@ -46,6 +50,12 @@ namespace StarterAssets
 		[Header("Cinemachine")]
 		[Tooltip("The follow target set in the Cinemachine Virtual Camera that the camera will follow")]
 		public GameObject CinemachineCameraTarget;
+		[Tooltip("Transform which contains CinemachineCameraTarget, repositioned for offsetting it")]
+		public Transform CameraOffsetTransform;
+		[Tooltip("Height of the eyes, in meters from the half height of the object so 1 meter above ground, default 59cm")]
+		public float EyeHeight = 0.59f;
+		[Tooltip("Height of character crouched")]
+		public float CrouchHeight = 1f;
 		[Tooltip("How far in degrees can you move the camera up")]
 		public float TopClamp = 90.0f;
 		[Tooltip("How far in degrees can you move the camera down")]
@@ -63,6 +73,8 @@ namespace StarterAssets
 		// timeout deltatime
 		private float _jumpTimeoutDelta;
 		private float _fallTimeoutDelta;
+		private float _standingHeight = 2f;
+		private bool _crouched;
 
 	
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
@@ -117,6 +129,7 @@ namespace StarterAssets
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
+			Crouching();
 			//Debug.Log(Grounded);
 		}
 
@@ -157,7 +170,24 @@ namespace StarterAssets
 		private void Move()
 		{
 			// set target speed based on move speed, sprint speed and if sprint is pressed
-			float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
+			//float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
+			float targetSpeed;
+
+			if(_input.sprint)
+			{
+				targetSpeed = SprintSpeed;
+				_crouched = false;
+			}
+			else if(_input.crouch)
+			{
+				targetSpeed = CrouchSpeed;
+				_crouched = true;
+			}
+			else
+			{
+				targetSpeed = MoveSpeed;
+				_crouched = false;
+			}
 
 			// a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
 
@@ -247,6 +277,36 @@ namespace StarterAssets
 			if (_verticalVelocity < _terminalVelocity)
 			{
 				_verticalVelocity += Gravity * Time.deltaTime;
+			}
+		}
+
+		void Crouching()
+		{
+			if(_crouched)
+			{
+				_controller.height = Mathf.MoveTowards( _controller.height, CrouchHeight, CrouchMaxDistanceDelta * Time.deltaTime);
+				//_controller.center.y set to half CrouchHeight + 1f, but no less than -0.5f, this keeps height and center in sync in relation to ground
+				_controller.center = Vector3.MoveTowards(_controller.center, 
+					new Vector3(
+						0f, Mathf.Max(0.5f * CrouchHeight - 1f, -0.5f), 0f), 
+					CrouchMaxDistanceDelta * Time.deltaTime);
+				CinemachineCameraTarget.transform.position = Vector3.MoveTowards(CinemachineCameraTarget.transform.position, 
+					new Vector3(
+						CameraOffsetTransform.position.x, 
+						CameraOffsetTransform.position.y -.7f, 
+						CameraOffsetTransform.position.z), 
+					CrouchMaxDistanceDelta * Time.deltaTime);
+			}
+			else
+			{
+				_controller.height = Mathf.MoveTowards( _controller.height, _standingHeight, CrouchMaxDistanceDelta * Time.deltaTime);
+				_controller.center = Vector3.MoveTowards(_controller.center, 
+					Vector3.zero, 
+					CrouchMaxDistanceDelta * Time.deltaTime);
+				CinemachineCameraTarget.transform.position = Vector3.MoveTowards(
+					CinemachineCameraTarget.transform.position, 
+					CameraOffsetTransform.position, 
+					CrouchMaxDistanceDelta * Time.deltaTime);
 			}
 		}
 

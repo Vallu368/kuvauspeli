@@ -1004,6 +1004,11 @@ PrefabInstance:
       objectReference: {fileID: 1427299529}
     - target: {fileID: 9179175161901404290, guid: 4bdf79ad727b69d4795011409c61235c,
         type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179175161901404290, guid: 4bdf79ad727b69d4795011409c61235c,
+        type: 3}
       propertyPath: orientation
       value: 
       objectReference: {fileID: 3000213103769314313}
@@ -1220,6 +1225,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8835318923693227355, guid: d5828c2aeedcc584991cbcf81ccd874c,
         type: 3}
+      propertyPath: m_Name
+      value: CameraPosition
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835318923693227355, guid: d5828c2aeedcc584991cbcf81ccd874c,
+        type: 3}
       propertyPath: m_TagString
       value: CinemachineTarget
       objectReference: {fileID: 0}
@@ -1312,7 +1322,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6250686263272122264}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c46fcf1673e2a444fa5915aa2a896631, type: 3}
   m_Name: 
@@ -1333,7 +1343,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 5
-  SprintSpeed: 8
+  SprintSpeed: 40
+  CrouchSpeed: 2
+  CrouchMaxDistanceDelta: 8
   RotationSpeed: 1
   SpeedChangeRate: 10
   JumpHeight: 1.2
@@ -1347,6 +1359,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   CinemachineCameraTarget: {fileID: 5998722496562734539}
+  CameraOffsetTransform: {fileID: 7479635373203751688}
+  EyeHeight: 0.59
+  CrouchHeight: 1
   TopClamp: 90
   BottomClamp: -90
 --- !u!114 &1628365925
@@ -1396,6 +1411,7 @@ MonoBehaviour:
   look: {x: 0, y: 0}
   jump: 0
   sprint: 0
+  crouch: 0
   analogMovement: 0
   cursorLocked: 1
   cursorInputForLook: 1
@@ -1416,6 +1432,12 @@ MonoBehaviour:
     m_Bits: 0
   canPush: 0
   strength: 1.1
+--- !u!4 &7479635373203751688 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5651988198268656536, guid: d5828c2aeedcc584991cbcf81ccd874c,
+    type: 3}
+  m_PrefabInstance: {fileID: 3000213104056424592}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7596606970262464321 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4669797571881959377, guid: d5828c2aeedcc584991cbcf81ccd874c,
