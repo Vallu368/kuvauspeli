@@ -5,7 +5,7 @@ using UnityEngine;
 public class Pause : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
-
+    public GameObject bruh;
 
     public static bool isGamePaused = false;
 
@@ -22,6 +22,7 @@ public class Pause : MonoBehaviour
 
     public void ResumeGame()
     {
+        bruh.SetActive(true);
         isGamePaused = false;
         pauseMenu.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;   //cursor lukitto keskelle n?ytt??
@@ -31,6 +32,7 @@ public class Pause : MonoBehaviour
 
     public void PauseGame()
     {
+        bruh.SetActive(false);
         isGamePaused = true;
         pauseMenu.SetActive(true);
         Cursor.lockState = CursorLockMode.None;   //cursor ei lukittu

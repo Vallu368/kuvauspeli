@@ -12,12 +12,20 @@ namespace StarterAssets
         GameObject player;
         PlayerMovement playerMovement;
         PlayerCam cam;
+        GameObject bruh;
+        GameObject cameraCanvas;
+        public GameObject inv;
 
 
         [SerializeField] GameObject crosshair;
 
         private void Start()
         {
+            bruh = GameObject.Find("Player/Bruh");
+            cameraCanvas = GameObject.Find("Player/CameraCanvas");
+            cameraCanvas.SetActive(false);
+            inv.SetActive(false);
+            bruh.SetActive(false);
          player = GameObject.FindGameObjectWithTag("Player");
             playerMovement = player.GetComponentInChildren<PlayerMovement>();
             cam = player.GetComponentInChildren<PlayerCam>();
@@ -35,6 +43,9 @@ namespace StarterAssets
 
         public void StartGame()
         {
+            cameraCanvas.SetActive(true);
+            bruh.SetActive(true);
+            inv.SetActive(true);
             gameObject.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;   //cursor lukitto keskelle n�ytt��
             Cursor.visible = false;                     //cursor n�kym�t�n
