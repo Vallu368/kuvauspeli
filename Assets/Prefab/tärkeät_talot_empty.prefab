@@ -379,6 +379,12 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &4043673074224548160 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3714240209530150873, guid: 7e6c0e2f30c85094998f70118d3de86c,
+    type: 3}
+  m_PrefabInstance: {fileID: 834752484255930009}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7582179750825510732 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7110324790718517717, guid: 7e6c0e2f30c85094998f70118d3de86c,
@@ -438,7 +444,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forRandomLock: {fileID: 0}
   forSchoolLock: {fileID: 704823926512651340}
-  schoolLock: {fileID: 0}
+  schoolLock: {fileID: 4043673074224548160}
+  randomLock: {fileID: 0}
   _keyItemController: {fileID: 759124810}
   openAnimationname: doorOpen
   closeAnimationname: doorClosed

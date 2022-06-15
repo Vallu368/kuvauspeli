@@ -433,6 +433,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 179c0f95b0f918a46bb34669db1e9b77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &188159470 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6545092461927957712, guid: d9f7d096204ac594986b164ddf976192,
+    type: 3}
+  m_PrefabInstance: {fileID: 2989352970653830586}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &188570812 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8990023384368445743, guid: c66accdc2bb6ebc4d84e800eb008c847,
@@ -4091,6 +4097,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1752701548}
   m_CullTransparentMesh: 1
+--- !u!1 &1765818490 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8779403529646106217, guid: d9f7d096204ac594986b164ddf976192,
+    type: 3}
+  m_PrefabInstance: {fileID: 2989352970653830586}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1798962563
 GameObject:
   m_ObjectHideFlags: 0
@@ -4428,6 +4440,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1929987931}
   m_CullTransparentMesh: 1
+--- !u!114 &1933199414 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5360275128111353148, guid: d9f7d096204ac594986b164ddf976192,
+    type: 3}
+  m_PrefabInstance: {fileID: 2989352970653830586}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50233e1f14251a84b93bd76137dbf423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!20 &1933609252 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 6251030097763375414, guid: 7ed0ddb0146cf3847bb312c9adceb667,
@@ -9223,23 +9247,19 @@ PrefabInstance:
     - target: {fileID: 759124809, guid: 5212a330dad5b354795ca44ce49bf0c4, type: 3}
       propertyPath: randomLock
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 759124809, guid: 5212a330dad5b354795ca44ce49bf0c4, type: 3}
-      propertyPath: schoolLock
-      value: 
-      objectReference: {fileID: 1317975696}
+      objectReference: {fileID: 188159470}
     - target: {fileID: 759124809, guid: 5212a330dad5b354795ca44ce49bf0c4, type: 3}
       propertyPath: _keyInventory
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1933199414}
     - target: {fileID: 759124809, guid: 5212a330dad5b354795ca44ce49bf0c4, type: 3}
       propertyPath: forRandomLock
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1765818490}
     - target: {fileID: 759124810, guid: 5212a330dad5b354795ca44ce49bf0c4, type: 3}
       propertyPath: _keyInventory
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1933199414}
     - target: {fileID: 536256220691327923, guid: 5212a330dad5b354795ca44ce49bf0c4,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
