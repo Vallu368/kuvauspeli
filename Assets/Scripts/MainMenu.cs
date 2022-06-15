@@ -23,13 +23,13 @@ namespace StarterAssets
             cam = player.GetComponentInChildren<PlayerCam>();
         
 
-            //playerMovement.canPlayerMove = false;
-            //cam.canPlayerMove = false;
+           // playerMovement.canPlayerMove = false;
+            cam.canPlayerMove = false;
 
             Cursor.lockState = CursorLockMode.None;   //cursor ei lukittu
             Cursor.visible = true;                     //cursor n�kyy
 
-            firstPersonController = player.GetComponent<FirstPersonController>();
+           // firstPersonController = player.GetComponent<FirstPersonController>();
            // firstPersonController.hahmoCanMove = false;
         }
 
@@ -38,8 +38,8 @@ namespace StarterAssets
             gameObject.SetActive(false);
             Cursor.lockState = CursorLockMode.Locked;   //cursor lukitto keskelle n�ytt��
             Cursor.visible = false;                     //cursor n�kym�t�n
-            //playerMovement.canPlayerMove = true;
-            //cam.canPlayerMove = true;
+           // playerMovement.canPlayerMove = true;
+            cam.canPlayerMove = true;
             crosshair.gameObject.SetActive(true);
           //  firstPersonController.hahmoCanMove = true;
         }

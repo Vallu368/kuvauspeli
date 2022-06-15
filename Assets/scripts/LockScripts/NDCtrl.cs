@@ -8,6 +8,8 @@ namespace DoorSystem
 public class NDCtrl : MonoBehaviour
 {
     private Animator doorAnim;
+    private Animator animator;
+        [SerializeField] GameObject forLock;
     private bool doorOpen = false;
 
     [SerializeField] private int waitTimer = 1;
@@ -17,6 +19,7 @@ public class NDCtrl : MonoBehaviour
     private void Awake()
     {
         doorAnim = gameObject.GetComponent<Animator>();
+        animator = forLock.GetComponent<Animator>();
     }
 
     private IEnumerator PauseDoorInteraction()
@@ -31,13 +34,15 @@ public class NDCtrl : MonoBehaviour
         if (!doorOpen && !pauseInteraction)
         {
             doorAnim.Play("doorOpen", 0, 0.0f);
-            doorOpen = true;
+                animator.Play("secondLockAnim", 0, 0.0f);
+                doorOpen = true;
                 StartCoroutine(PauseDoorInteraction());
             }
         else if (doorOpen && !pauseInteraction) 
         {
             doorAnim.Play("doorClosed", 0, 0.0f);
-            doorOpen = false;
+                animator.Play("secondLockSecondAnim", 0, 0.0f);
+                doorOpen = false;
                 StartCoroutine(PauseDoorInteraction());
             }
     }
