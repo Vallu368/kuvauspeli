@@ -35,9 +35,11 @@ public class CameraRaycast : MonoBehaviour
                 {
                     if (hit.collider.GetComponent<ObjectiveScript>().hasGhost)
                     {
+                        Debug.Log("ghost");
                         hit.collider.GetComponent<ObjectiveScript>().SetGhostActive();
                         hit.collider.GetComponent<ObjectiveScript>().PicTaken();
                     }
+                    Debug.Log("objctiiive");
                     hitObjectID = hit.collider.GetComponent<ObjectiveScript>().objectiveNumber;
                     hit.collider.GetComponent<ObjectiveScript>().PicTaken();
 

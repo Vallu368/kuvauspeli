@@ -143,17 +143,17 @@ PrefabInstance:
     - target: {fileID: 2001046884447875575, guid: 48b9e7f0c945b9f429581112964a6d3d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -102.7392
+      value: -103.09
       objectReference: {fileID: 0}
     - target: {fileID: 2001046884447875575, guid: 48b9e7f0c945b9f429581112964a6d3d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.72467136
+      value: -0.72
       objectReference: {fileID: 0}
     - target: {fileID: 2001046884447875575, guid: 48b9e7f0c945b9f429581112964a6d3d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 118.869
+      value: 119.03
       objectReference: {fileID: 0}
     - target: {fileID: 2001046884447875575, guid: 48b9e7f0c945b9f429581112964a6d3d,
         type: 3}
@@ -1275,6 +1275,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6656d20fe91b5c64191162cfd23a5c37, type: 3}
+--- !u!4 &548123949 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4385381383750943847, guid: d6bcfcc4d84f1174f8d76a63d13b8d66,
+    type: 3}
+  m_PrefabInstance: {fileID: 1680638005685212444}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &571297581
 GameObject:
   m_ObjectHideFlags: 0
@@ -2448,12 +2454,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!4 &1118645528 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5421156839816640956, guid: d9d59fa6ae452b8489bfb05134f91fd6,
-    type: 3}
-  m_PrefabInstance: {fileID: 1328203292}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1134624998 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 332044987, guid: ac9b6f93ba6ca764c9fde2f8da6b06aa,
@@ -2686,75 +2686,6 @@ MonoBehaviour:
   dropForwardForce: 10
   dropUpwardForce: 2
   equipped: 0
---- !u!1001 &1328203292
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2117663139}
-    m_Modifications:
-    - target: {fileID: 5421156839816640954, guid: d9d59fa6ae452b8489bfb05134f91fd6,
-        type: 3}
-      propertyPath: m_Name
-      value: Granny Crackhouse Objective (0)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5421156839816640956, guid: d9d59fa6ae452b8489bfb05134f91fd6,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5421156839816640956, guid: d9d59fa6ae452b8489bfb05134f91fd6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 27.833803
-      objectReference: {fileID: 0}
-    - target: {fileID: 5421156839816640956, guid: d9d59fa6ae452b8489bfb05134f91fd6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.66632867
-      objectReference: {fileID: 0}
-    - target: {fileID: 5421156839816640956, guid: d9d59fa6ae452b8489bfb05134f91fd6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 97.171005
-      objectReference: {fileID: 0}
-    - target: {fileID: 5421156839816640956, guid: d9d59fa6ae452b8489bfb05134f91fd6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9978107
-      objectReference: {fileID: 0}
-    - target: {fileID: 5421156839816640956, guid: d9d59fa6ae452b8489bfb05134f91fd6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5421156839816640956, guid: d9d59fa6ae452b8489bfb05134f91fd6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.06613595
-      objectReference: {fileID: 0}
-    - target: {fileID: 5421156839816640956, guid: d9d59fa6ae452b8489bfb05134f91fd6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5421156839816640956, guid: d9d59fa6ae452b8489bfb05134f91fd6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5421156839816640956, guid: d9d59fa6ae452b8489bfb05134f91fd6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5421156839816640956, guid: d9d59fa6ae452b8489bfb05134f91fd6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d9d59fa6ae452b8489bfb05134f91fd6, type: 3}
 --- !u!1 &1338365871
 GameObject:
   m_ObjectHideFlags: 0
@@ -4837,7 +4768,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1118645528}
+  - {fileID: 548123949}
   - {fileID: 255794778}
   - {fileID: 1555903650}
   - {fileID: 225127858}
@@ -5288,6 +5219,80 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1424759562647175860}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1680638005685212444
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2117663139}
+    m_Modifications:
+    - target: {fileID: 4385381383750943771, guid: d6bcfcc4d84f1174f8d76a63d13b8d66,
+        type: 3}
+      propertyPath: m_Name
+      value: Granny Crackhouse Objective(0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385381383750943847, guid: d6bcfcc4d84f1174f8d76a63d13b8d66,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385381383750943847, guid: d6bcfcc4d84f1174f8d76a63d13b8d66,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.50000995
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385381383750943847, guid: d6bcfcc4d84f1174f8d76a63d13b8d66,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 27.51619
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385381383750943847, guid: d6bcfcc4d84f1174f8d76a63d13b8d66,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5863286
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385381383750943847, guid: d6bcfcc4d84f1174f8d76a63d13b8d66,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 96.993484
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385381383750943847, guid: d6bcfcc4d84f1174f8d76a63d13b8d66,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9972956
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385381383750943847, guid: d6bcfcc4d84f1174f8d76a63d13b8d66,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385381383750943847, guid: d6bcfcc4d84f1174f8d76a63d13b8d66,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.07349501
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385381383750943847, guid: d6bcfcc4d84f1174f8d76a63d13b8d66,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385381383750943847, guid: d6bcfcc4d84f1174f8d76a63d13b8d66,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385381383750943847, guid: d6bcfcc4d84f1174f8d76a63d13b8d66,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 8.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 4385381383750943847, guid: d6bcfcc4d84f1174f8d76a63d13b8d66,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d6bcfcc4d84f1174f8d76a63d13b8d66, type: 3}
 --- !u!1001 &2103286656222831274
 PrefabInstance:
   m_ObjectHideFlags: 0
