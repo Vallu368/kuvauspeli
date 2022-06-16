@@ -2354,6 +2354,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Treehouse Objective (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2001046884447875568, guid: 48b9e7f0c945b9f429581112964a6d3d,
+        type: 3}
+      propertyPath: objectiveNumber
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2001046884447875575, guid: 48b9e7f0c945b9f429581112964a6d3d,
         type: 3}
       propertyPath: m_RootOrder
@@ -3416,6 +3421,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bridge Objective (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2001046884447875568, guid: 48b9e7f0c945b9f429581112964a6d3d,
+        type: 3}
+      propertyPath: objectiveNumber
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2001046884447875575, guid: 48b9e7f0c945b9f429581112964a6d3d,
         type: 3}
       propertyPath: m_RootOrder
@@ -3590,6 +3600,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Gazebo Objective (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2001046884447875568, guid: 48b9e7f0c945b9f429581112964a6d3d,
+        type: 3}
+      propertyPath: objectiveNumber
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2001046884447875575, guid: 48b9e7f0c945b9f429581112964a6d3d,
         type: 3}
