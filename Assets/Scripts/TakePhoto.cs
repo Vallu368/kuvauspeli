@@ -16,6 +16,13 @@ public class TakePhoto : MonoBehaviour
     [SerializeField] private Animator fadingAnimation;
     [SerializeField] private GameObject cameraUI;
     [SerializeField] private GameObject crosshair;
+    private bool isEnding;
+
+    private GameObject fadeoutImage;
+    private Image image;
+    private float targetAlpha;
+    private float FadeRate = 2f;
+
     public InventoryScript inv;
     public CameraRaycast raycast;
     public bool cameraMode = false;
@@ -26,7 +33,7 @@ public class TakePhoto : MonoBehaviour
 
     private void Awake()
     {
-       camAnim = polaroid.GetComponent<Animator>();
+        camAnim = polaroid.GetComponent<Animator>();
     }
 
     private void Start()
@@ -34,52 +41,60 @@ public class TakePhoto : MonoBehaviour
         polaroid.SetActive(false);
         camSound = GetComponent<AudioSource>();
 
+        fadeoutImage = GameObject.Find("Player/CameraCanvas/FadeOutImage");
+        inv = GameObject.Find("Player/Bruh").GetComponent<InventoryScript>();
+        image = fadeoutImage.GetComponent<Image>();
+        fadeoutImage.SetActive(false);
+
     }
 
     private void Update()
     {
-        if (!cameraMode && Input.GetMouseButtonDown(1)) //jos pidät right click pohjassa niin kamerajutut menee päälle ja voit ottaa kuvia
+        if (!isEnding)
         {
-            cameraMode = true;
-            AnimFrame();
-            polaroid.SetActive(true);
-            camAnim.Play("holdingCam");
-
-            
-        }
-        else if (Input.GetMouseButtonDown(1))
-        {
-            cameraMode = false;
-            StartCoroutine(ForAnimYay());
-        }
-
-        if (!takingPhoto && cameraMode) 
-        {
-            cameraUI.SetActive(true);
-            polaroid.SetActive(true);
-        }
-        else 
-            cameraUI.SetActive(false);
-
-
-        if (cameraMode && Input.GetMouseButtonDown(0)) //jos pidät right click pohjassa ja painat left click otat kuvan, jos kuva jo valmiina ruudulla left click poistaa sen
-        {
-            if (!viewingPhoto)
+            if (!cameraMode && Input.GetMouseButtonDown(1)) //jos pidät right click pohjassa niin kamerajutut menee päälle ja voit ottaa kuvia
             {
-                takingPhoto = true;
-                camSound.Play();
-                StartCoroutine(CapturePhoto());
+                cameraMode = true;
+                AnimFrame();
+                polaroid.SetActive(true);
+                camAnim.Play("holdingCam");
+
+
+            }
+            else if (Input.GetMouseButtonDown(1))
+            {
+                cameraMode = false;
+                StartCoroutine(ForAnimYay());
+            }
+
+            if (!takingPhoto && cameraMode)
+            {
+                cameraUI.SetActive(true);
+                polaroid.SetActive(true);
             }
             else
+                cameraUI.SetActive(false);
+
+
+            if (cameraMode && Input.GetMouseButtonDown(0)) //jos pidät right click pohjassa ja painat left click otat kuvan, jos kuva jo valmiina ruudulla left click poistaa sen
             {
-                RemovePhoto();
+                if (!viewingPhoto)
+                {
+                    takingPhoto = true;
+                    camSound.Play();
+                    StartCoroutine(CapturePhoto());
+                }
+                else
+                {
+                    RemovePhoto();
+                }
             }
-        }
-        if (!cameraMode && Input.GetMouseButtonDown(0)) 
-        {
-            if (viewingPhoto)
+            if (!cameraMode && Input.GetMouseButtonDown(0))
             {
-                RemovePhoto(); //left click poistaa kuvan vaikka right click ei olis pohjassa
+                if (viewingPhoto)
+                {
+                    RemovePhoto(); //left click poistaa kuvan vaikka right click ei olis pohjassa
+                }
             }
         }
     }
@@ -88,9 +103,9 @@ public class TakePhoto : MonoBehaviour
     {
         Debug.Log("okkkkkkkkk");
         yield return new WaitForSeconds(0.2f);
-            camAnim.Play("noCam");
-            yield return new WaitForSeconds(1);
-            polaroid.SetActive(false);
+        camAnim.Play("noCam");
+        yield return new WaitForSeconds(1);
+        polaroid.SetActive(false);
     }
 
     IEnumerator AnimFrame()
@@ -133,10 +148,10 @@ public class TakePhoto : MonoBehaviour
 
     void ShowPhoto()
     {
-        
+
         Sprite photoSprite = Sprite.Create(screenCapture, new Rect(0.0f, 0.0f, screenCapture.width, screenCapture.height), new Vector2(0.5f, 0.5f), 100.0f);
         if (raycast.objective == 1)
-        {   
+        {
             inv.AddImageToInventory(raycast.hitObjectID, photoSprite);
         }
 
@@ -156,5 +171,42 @@ public class TakePhoto : MonoBehaviour
         viewingPhoto = false;
         photoFrame.SetActive(false);
         crosshair.SetActive(true);
+        if (inv.picturesTaken >= 10)
+        {
+            StartCoroutine(Ending());
+        }
+    }
+
+    IEnumerator FadeIn()
+    {
+        fadeoutImage.SetActive(true);
+        targetAlpha = 1.0f;
+        Color curColor = image.color;
+        while (Mathf.Abs(curColor.a - targetAlpha) > 0.0001f)
+        {
+            curColor.a = Mathf.Lerp(curColor.a, targetAlpha, FadeRate * Time.deltaTime);
+            image.color = curColor;
+            yield return null;
+        }
+    }
+    IEnumerator FadeOut()
+    {
+        targetAlpha = 0f;
+        Color curColor = image.color;
+        while (Mathf.Abs(curColor.a - targetAlpha) > 0.0001f)
+        {
+            curColor.a = Mathf.Lerp(curColor.a, targetAlpha, FadeRate * Time.deltaTime);
+            image.color = curColor;
+            yield return null;
+        }
+        fadeoutImage.SetActive(false);
+    }
+    IEnumerator Ending()
+    {
+        yield return new WaitForSeconds(5f);
+        isEnding = true;
+        Debug.Log("starting ending");
+        StartCoroutine(FadeIn());
+        yield return new WaitForSeconds(3f);
     }
 }
