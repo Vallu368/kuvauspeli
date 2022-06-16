@@ -18,6 +18,8 @@ public class TakePhoto : MonoBehaviour
     [SerializeField] private GameObject crosshair;
     private bool isEnding;
 
+    public Text endingText;
+    private GameObject invCanvas;
     private GameObject fadeoutImage;
     private Image image;
     private float targetAlpha;
@@ -41,6 +43,7 @@ public class TakePhoto : MonoBehaviour
         polaroid.SetActive(false);
         camSound = GetComponent<AudioSource>();
 
+        invCanvas = GameObject.Find("InventoryCanvas");
         fadeoutImage = GameObject.Find("Player/CameraCanvas/FadeOutImage");
         inv = GameObject.Find("Player/Bruh").GetComponent<InventoryScript>();
         image = fadeoutImage.GetComponent<Image>();
@@ -50,6 +53,8 @@ public class TakePhoto : MonoBehaviour
 
     private void Update()
     {
+        
+        
         if (!isEnding)
         {
             if (!cameraMode && Input.GetMouseButtonDown(1)) //jos pidät right click pohjassa niin kamerajutut menee päälle ja voit ottaa kuvia
@@ -173,9 +178,13 @@ public class TakePhoto : MonoBehaviour
         crosshair.SetActive(true);
         if (inv.picturesTaken >= 10)
         {
-            StartCoroutine(Ending());
+            if (!isEnding)
+            {
+                StartCoroutine(Ending());
+            }
         }
-    }
+
+        }
 
     IEnumerator FadeIn()
     {
@@ -189,24 +198,37 @@ public class TakePhoto : MonoBehaviour
             yield return null;
         }
     }
-    IEnumerator FadeOut()
+    IEnumerator FadeInText()
     {
-        targetAlpha = 0f;
-        Color curColor = image.color;
-        while (Mathf.Abs(curColor.a - targetAlpha) > 0.0001f)
+        endingText.color = new Color(endingText.color.r, endingText.color.g, endingText.color.b, 0);
+        while (endingText.color.a < 1.0f)
         {
-            curColor.a = Mathf.Lerp(curColor.a, targetAlpha, FadeRate * Time.deltaTime);
-            image.color = curColor;
+            endingText.color = new Color(endingText.color.r, endingText.color.g, endingText.color.b, endingText.color.a + (Time.deltaTime / 1f));
             yield return null;
         }
-        fadeoutImage.SetActive(false);
     }
+    public IEnumerator FadeOutText()
+    {
+        endingText.color = new Color(endingText.color.r, endingText.color.g, endingText.color.b, 1);
+        while (endingText.color.a > 0.0f)
+        {
+            endingText.color = new Color(endingText.color.r, endingText.color.g, endingText.color.b, endingText.color.a - (Time.deltaTime / 1f));
+            yield return null;
+        }
+    }
+
     IEnumerator Ending()
     {
+        Debug.Log("ENDING");
         yield return new WaitForSeconds(5f);
+        invCanvas.SetActive(false);
+        inv.enabled = false;
         isEnding = true;
         Debug.Log("starting ending");
         StartCoroutine(FadeIn());
         yield return new WaitForSeconds(3f);
+        StartCoroutine(FadeInText());
+        yield return new WaitForSeconds(5f);
+        StartCoroutine(FadeOutText());
     }
 }
