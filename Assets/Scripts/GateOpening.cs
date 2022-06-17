@@ -6,17 +6,21 @@ public class GateOpening : MonoBehaviour
 {
     private InventoryScript inv;
     public int PicturesNeededToUse;
-    // Start is called before the first frame update
+    private Animator leftAnimator;
+    private Animator rightAnimator;
+    [SerializeField] GameObject forLeftAnimator;
+    [SerializeField] GameObject forRightAnimator;
+
+    private void Awake()
+    {
+        leftAnimator = forLeftAnimator.GetComponent<Animator>();
+        rightAnimator = forRightAnimator.GetComponent<Animator>();
+    }
+
     void Start()
     {
         inv = GameObject.Find("Player/Bruh").GetComponent<InventoryScript>();
         
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     private void OnTriggerEnter(Collider other)
@@ -24,6 +28,8 @@ public class GateOpening : MonoBehaviour
         if (other.gameObject.name == "Test")
         {
             Debug.Log("boooop");
+            leftAnimator.Play("vasenPorttiAuki", 0, 0.0f);
+            rightAnimator.Play("oikeePorttiAuki", 0, 0.0f);
         }
     }
 
