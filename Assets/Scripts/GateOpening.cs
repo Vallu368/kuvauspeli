@@ -27,9 +27,12 @@ public class GateOpening : MonoBehaviour
     {
         if (other.gameObject.name == "Test")
         {
-            Debug.Log("boooop");
-            leftAnimator.Play("vasenPorttiAuki", 0, 0.0f);
-            rightAnimator.Play("oikeePorttiAuki", 0, 0.0f);
+            if (inv.picturesTaken >= PicturesNeededToUse)
+            {
+                leftAnimator.Play("vasenPorttiAuki", 0, 0.0f);
+                rightAnimator.Play("oikeePorttiAuki", 0, 0.0f);
+            }
+            else Debug.Log("not enough pics");
         }
     }
 
