@@ -219,11 +219,11 @@ public class TakePhoto : MonoBehaviour
 
     IEnumerator Ending()
     {
+        isEnding = true;
         Debug.Log("ENDING");
         yield return new WaitForSeconds(5f);
         invCanvas.SetActive(false);
         inv.enabled = false;
-        isEnding = true;
         Debug.Log("starting ending");
         StartCoroutine(FadeIn());
         yield return new WaitForSeconds(3f);

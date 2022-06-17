@@ -1285,7 +1285,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319901329}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -74.85422, y: -44.06659, z: -285.63126}
+  m_LocalPosition: {x: -74.85422, y: -44.06659, z: -271.6}
   m_LocalScale: {x: 85.02, y: 157.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2752,6 +2752,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2001046884447875575, guid: 48b9e7f0c945b9f429581112964a6d3d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 6.5601916
+      objectReference: {fileID: 0}
+    - target: {fileID: 2001046884447875575, guid: 48b9e7f0c945b9f429581112964a6d3d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2126
       objectReference: {fileID: 0}
     - target: {fileID: 2001046884447875575, guid: 48b9e7f0c945b9f429581112964a6d3d,
         type: 3}
@@ -9392,6 +9402,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 585120761, guid: 7ed0ddb0146cf3847bb312c9adceb667, type: 3}
+      propertyPath: picturesTaken
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 585120761, guid: 7ed0ddb0146cf3847bb312c9adceb667, type: 3}
       propertyPath: inventoryPanel
       value: 
