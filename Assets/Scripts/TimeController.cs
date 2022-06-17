@@ -9,8 +9,6 @@ public class TimeController : MonoBehaviour
     [SerializeField]
     private float timeMultiplier;
 
-    [SerializeField]
-    private TextMeshProUGUI timeText;
 
     [SerializeField]
     private float startHour; // aika mistä peli alkaa
@@ -52,10 +50,10 @@ public class TimeController : MonoBehaviour
 
         sunLight = GameObject.Find("Visuals/Sun Light").GetComponent<Light>();
         moonLight = GameObject.Find("Visuals/Moon Light").GetComponent<Light>();
-        timeText = GameObject.Find("Player/CameraCanvas/Time Text").GetComponent<TextMeshProUGUI>();
     }
     void Update()
     {
+
         UpdateTimeOfDay();
         RotateSun();
         UpdateLightSettings();
@@ -65,10 +63,6 @@ public class TimeController : MonoBehaviour
     {
         currentTime = currentTime.AddSeconds(Time.deltaTime * timeMultiplier);
 
-        if (timeText != null)
-        {
-            timeText.text = currentTime.ToString("HH:mm");
-        }
     }
 
     private void RotateSun()
