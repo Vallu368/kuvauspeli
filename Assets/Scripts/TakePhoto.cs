@@ -19,6 +19,7 @@ public class TakePhoto : MonoBehaviour
     private bool isEnding;
 
     public Text endingText;
+    public Text creditsText;
     private GameObject invCanvas;
     private GameObject fadeoutImage;
     private Image image;
@@ -198,37 +199,39 @@ public class TakePhoto : MonoBehaviour
             yield return null;
         }
     }
-    IEnumerator FadeInText()
+    IEnumerator FadeInText(Text t)
     {
-        endingText.color = new Color(endingText.color.r, endingText.color.g, endingText.color.b, 0);
-        while (endingText.color.a < 1.0f)
+        t.color = new Color(t.color.r, t.color.g, t.color.b, 0);
+        while (t.color.a < 1.0f)
         {
-            endingText.color = new Color(endingText.color.r, endingText.color.g, endingText.color.b, endingText.color.a + (Time.deltaTime / 1f));
+            t.color = new Color(t.color.r, endingText.color.g, t.color.b, t.color.a + (Time.deltaTime / 1f));
             yield return null;
         }
     }
-    public IEnumerator FadeOutText()
+    public IEnumerator FadeOutText(Text t)
     {
-        endingText.color = new Color(endingText.color.r, endingText.color.g, endingText.color.b, 1);
+        endingText.color = new Color(t.color.r, t.color.g, t.color.b, 1);
         while (endingText.color.a > 0.0f)
         {
-            endingText.color = new Color(endingText.color.r, endingText.color.g, endingText.color.b, endingText.color.a - (Time.deltaTime / 1f));
+            endingText.color = new Color(t.color.r, t.color.g, t.color.b, t.color.a - (Time.deltaTime / 1f));
             yield return null;
         }
     }
 
     IEnumerator Ending()
     {
+        isEnding = true;
         Debug.Log("ENDING");
         yield return new WaitForSeconds(5f);
         invCanvas.SetActive(false);
         inv.enabled = false;
-        isEnding = true;
         Debug.Log("starting ending");
         StartCoroutine(FadeIn());
         yield return new WaitForSeconds(3f);
-        StartCoroutine(FadeInText());
+        StartCoroutine(FadeInText(endingText));
         yield return new WaitForSeconds(5f);
-        StartCoroutine(FadeOutText());
+        StartCoroutine(FadeOutText(endingText));
+        yield return new WaitForSeconds(5f);
+        StartCoroutine(FadeInText(creditsText));
     }
 }
