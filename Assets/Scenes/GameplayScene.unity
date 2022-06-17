@@ -369,8 +369,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 15.136673, y: 10.537884, z: 12.897842}
-  m_Center: {x: -7.0683365, y: 0.50170135, z: 5.948921}
+  m_Size: {x: 16.778122, y: 10.537884, z: 17.23111}
+  m_Center: {x: -6.247612, y: 0.50170135, z: 6.321335}
 --- !u!4 &161221918 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2001046884447875575, guid: 48b9e7f0c945b9f429581112964a6d3d,
@@ -1755,12 +1755,17 @@ PrefabInstance:
     - target: {fileID: 2001046884447875467, guid: 48b9e7f0c945b9f429581112964a6d3d,
         type: 3}
       propertyPath: m_Name
-      value: Vesikivet Objective
+      value: Vesikivet Objective(8)
       objectReference: {fileID: 0}
     - target: {fileID: 2001046884447875568, guid: 48b9e7f0c945b9f429581112964a6d3d,
         type: 3}
       propertyPath: objectiveNumber
-      value: 5
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2001046884447875573, guid: 48b9e7f0c945b9f429581112964a6d3d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2001046884447875575, guid: 48b9e7f0c945b9f429581112964a6d3d,
         type: 3}

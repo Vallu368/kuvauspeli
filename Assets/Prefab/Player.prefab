@@ -2072,7 +2072,7 @@ MonoBehaviour:
   inventoryPanel: {fileID: 0}
   inventoryOpen: 0
   i: 0
-  picturesTaken: 9
+  picturesTaken: 0
 --- !u!114 &1220924661
 MonoBehaviour:
   m_ObjectHideFlags: 0
