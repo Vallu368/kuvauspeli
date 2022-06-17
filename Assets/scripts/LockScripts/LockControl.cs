@@ -21,7 +21,7 @@ public class LockControl : MonoBehaviour
     private void Start()
     {
         result = new int[] {0, 0, 0};
-        correctCombination = new int[] { 3, 6, 5 };
+        correctCombination = new int[] { 8, 5, 8 };
         Rotate.Rotated += CheckResults;
 
             lockObject = GameObject.Find("Combination_Padlock");
