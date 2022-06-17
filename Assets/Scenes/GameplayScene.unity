@@ -1522,7 +1522,7 @@ PrefabInstance:
     - target: {fileID: 1279943790690543178, guid: 6656d20fe91b5c64191162cfd23a5c37,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1279943790690543178, guid: 6656d20fe91b5c64191162cfd23a5c37,
         type: 3}
@@ -1618,7 +1618,7 @@ Transform:
   - {fileID: 169600579}
   - {fileID: 646631619}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &585355348 stripped
 GameObject:
@@ -2783,7 +2783,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 22.237, z: 0}
 --- !u!1 &1015264641 stripped
 GameObject:
@@ -3754,7 +3754,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 19.603, z: 0}
 --- !u!1 &1411924120
 GameObject:
@@ -3857,75 +3857,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1001 &1422806972
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2001046884447875467, guid: 48b9e7f0c945b9f429581112964a6d3d,
-        type: 3}
-      propertyPath: m_Name
-      value: haamu testi
-      objectReference: {fileID: 0}
-    - target: {fileID: 2001046884447875575, guid: 48b9e7f0c945b9f429581112964a6d3d,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2001046884447875575, guid: 48b9e7f0c945b9f429581112964a6d3d,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.8087234
-      objectReference: {fileID: 0}
-    - target: {fileID: 2001046884447875575, guid: 48b9e7f0c945b9f429581112964a6d3d,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 2001046884447875575, guid: 48b9e7f0c945b9f429581112964a6d3d,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 7.4320374
-      objectReference: {fileID: 0}
-    - target: {fileID: 2001046884447875575, guid: 48b9e7f0c945b9f429581112964a6d3d,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2001046884447875575, guid: 48b9e7f0c945b9f429581112964a6d3d,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2001046884447875575, guid: 48b9e7f0c945b9f429581112964a6d3d,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2001046884447875575, guid: 48b9e7f0c945b9f429581112964a6d3d,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2001046884447875575, guid: 48b9e7f0c945b9f429581112964a6d3d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2001046884447875575, guid: 48b9e7f0c945b9f429581112964a6d3d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2001046884447875575, guid: 48b9e7f0c945b9f429581112964a6d3d,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 48b9e7f0c945b9f429581112964a6d3d, type: 3}
 --- !u!114 &1423630251 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1423630251, guid: ac9b6f93ba6ca764c9fde2f8da6b06aa,
@@ -3948,7 +3879,7 @@ PrefabInstance:
     - target: {fileID: 335330437237312280, guid: 2b4a66069272e8344b030c7036410352,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 335330437237312280, guid: 2b4a66069272e8344b030c7036410352,
         type: 3}
@@ -4180,7 +4111,7 @@ PrefabInstance:
     - target: {fileID: 6959140612509046439, guid: eb9ffe1e4b20d1344aeaddaef2864689,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6959140612509046439, guid: eb9ffe1e4b20d1344aeaddaef2864689,
         type: 3}
@@ -4378,6 +4309,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.99999994, y: 1.0000001, z: 0.9999999}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1676583768 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7869005051318766116, guid: 6ad4c1248a95a2c46b960139892c560c,
+    type: 3}
+  m_PrefabInstance: {fileID: 3533561164452000970}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1676583771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676583768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde141206096e9b4daad2e35c9699505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PicturesNeededToUse: 1
 --- !u!1 &1691212636 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3185871463581852933, guid: 5212a330dad5b354795ca44ce49bf0c4,
@@ -5147,7 +5097,7 @@ Transform:
   m_Children:
   - {fileID: 1411924121}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2008051030
 MonoBehaviour:
@@ -5563,7 +5513,7 @@ Transform:
   - {fileID: 225127858}
   - {fileID: 150370755}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2118805193
 GameObject:
@@ -5859,7 +5809,7 @@ PrefabInstance:
     - target: {fileID: 549192621354677906, guid: 565a063f5ae091b428bf9a8175ec427b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 549192621354677906, guid: 565a063f5ae091b428bf9a8175ec427b,
         type: 3}
@@ -8711,7 +8661,7 @@ PrefabInstance:
     - target: {fileID: 8638909618928326858, guid: d4062c7586363824293b0cfaef108101,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8638909618928326858, guid: d4062c7586363824293b0cfaef108101,
         type: 3}
@@ -8895,7 +8845,7 @@ PrefabInstance:
     - target: {fileID: 2325097364640781445, guid: a12832b780dcb2642b5a1ebdcaee9ada,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2325097364640781445, guid: a12832b780dcb2642b5a1ebdcaee9ada,
         type: 3}
@@ -8959,7 +8909,7 @@ PrefabInstance:
     - target: {fileID: 2372999567735085887, guid: d9f7d096204ac594986b164ddf976192,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2372999567735085887, guid: d9f7d096204ac594986b164ddf976192,
         type: 3}
@@ -9035,6 +8985,695 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 268759465, guid: 7ed0ddb0146cf3847bb312c9adceb667, type: 3}
+      propertyPath: m_Text
+      value: 'According to all known laws of aviation, there is no way a bee should
+        be able to fly.
+
+        
+
+        Its wings are too small to get its fat
+        little body off the ground.
+
+        
+
+        The bee, of course, flies
+        anyway because bees don''t care what humans think is impossible.
+
+        
+
+        Yellow,
+        black. Yellow, black. Yellow, black. Yellow, black.
+
+        
+
+        Ooh,
+        black and yellow!
+
+        
+
+        Let''s shake it up a little.
+
+        
+
+        Barry!
+        Breakfast is ready!
+
+        
+
+        Coming!
+
+        
+
+        Hang
+        on a second.
+
+        
+
+        Hello?
+
+        
+
+        Barry?
+
+        
+
+        Adam?
+
+        
+
+        Can
+        you believe this is happening?
+
+        
+
+        I can''t.
+
+        
+
+        I''ll
+        pick you up.
+
+        
+
+        Looking sharp.
+
+        
+
+        Use
+        the stairs, Your father paid good money for those.
+
+        
+
+        Sorry.
+        I''m excited.
+
+        
+
+        Here''s the graduate.
+
+        
+
+        We''re
+        very proud of you, son.
+
+        
+
+        A perfect report card, all B''s.
+
+        
+
+        Very
+        proud.
+
+        
+
+        Ma! I got a thing going here.
+
+        
+
+        You
+        got lint on your fuzz.
+
+        
+
+        Ow! That''s me!
+
+        
+
+        Wave
+        to us! We''ll be in row 118,000.
+
+        
+
+        Bye!
+
+        
+
+        Barry,
+        I told you, stop flying in the house!
+
+        
+
+        Hey, Adam.
+
+        
+
+        Hey,
+        Barry.
+
+        
+
+        Is that fuzz gel?
+
+        
+
+        A little.
+        Special day, graduation.
+
+        
+
+        Never thought I''d make it.
+
+        
+
+        Three
+        days grade school, three days high school.
+
+        
+
+        Those were
+        awkward.
+
+        
+
+        Three days college. I''m glad I took a day
+        and hitchhiked around The Hive.
+
+        
+
+        You did come back different.
+
+        
+
+        Hi,
+        Barry. Artie, growing a mustache? Looks good.
+
+        
+
+        Hear about
+        Frankie?
+
+        
+
+        Yeah.
+
+        
+
+        You going to the
+        funeral?
+
+        
+
+        No, I''m not going.
+
+        
+
+        Everybody
+        knows, sting someone, you die.
+
+        
+
+        Don''t waste it on a
+        squirrel.
+
+        
+
+        Such a hothead.
+
+        
+
+        I guess
+        he could have just gotten out of the way.
+
+        
+
+        I love this
+        incorporating an amusement park into our day.
+
+        
+
+        That''s
+        why we don''t need vacations.
+
+        
+
+        Boy, quite a bit of pomp
+        under the circumstances.
+
+        
+
+        Well, Adam, today we are men.
+
+        
+
+        We
+        are!
+
+        
+
+        Bee-men.
+
+        
+
+        Amen!
+
+        
+
+        Hallelujah!
+
+        
+
+        Students,
+        faculty, distinguished bees,
+
+        
+
+        please welcome Dean Buzzwell.
+
+        
+
+        Welcome,
+        New Hive City graduating class of 9:15.
+
+        
+
+        That concludes
+        our ceremonies And begins your career at Honex Industries!
+
+        
+
+        Will
+        we pick our job today?
+
+        
+
+        I heard it''s just orientation.
+
+        
+
+        Heads
+        up! Here we go.
+
+        
+
+        Keep your hands and antennas inside
+        the tram at all times.
+
+        
+
+        Wonder what it''ll be like?
+
+        
+
+        A
+        little scary.
+
+        
+
+        Welcome to Honex, a division of Honesco
+        and a part of the Hexagon Group.
+
+        
+
+        This is it!
+
+        
+
+        Wow.
+
+        
+
+        Wow.
+
+        
+
+        We
+        know that you, as a bee, have worked your whole life to get to the point
+        where you can work for your whole life.
+
+        
+
+        Honey begins
+        when our valiant Pollen Jocks bring the nectar to The Hive.
+
+        
+
+        Our
+        top-secret formula is automatically color-corrected, scent-adjusted and bubble-contoured
+        into this soothing sweet syrup with its distinctive golden glow you know
+        as... Honey!
+
+        
+
+        That girl was hot.
+
+        
+
+        She''s
+        my cousin!
+
+        
+
+        She is?
+
+        
+
+        Yes, we''re
+        all cousins.
+
+        
+
+        Right. You''re right.
+
+        
+
+        At
+        Honex, we constantly strive to improve every aspect of bee existence.
+
+        
+
+        These
+        bees are stress-testing a new helmet technology.
+
+        
+
+        What
+        do you think he makes?
+
+        
+
+        Not enough.
+
+        
+
+        Here
+        we have our latest advancement, the Krelman.
+
+        
+
+        What does
+        that do?
+
+        
+
+        Catches that little strand of honey that hangs
+        after you pour it.
+
+        
+
+        Saves us millions.
+
+        
+
+        Can
+        anyone work on the Krelman?
+
+        
+
+        Of course. Most bee jobs
+        are small ones.
+
+        
+
+        But bees know that every small job,
+        if it''s done well, means a lot.
+
+        
+
+        But choose carefully
+        because you''ll stay in the job you pick for the rest of your life.
+
+        
+
+        The
+        same job the rest of your life? I didn''t know that.
+
+        
+
+        What''s
+        the difference?
+
+        
+
+        You''ll be happy to know that bees,
+        as a species, haven''t had one day off in 27 million years.
+
+        
+
+        So
+        you''ll just work us to death?
+
+        
+
+        We''ll sure try.
+
+        
+
+        Wow!
+        That blew my mind!
+
+        
+
+        "What''s the difference?"
+
+        
+
+        How
+        can you say that?
+
+        
+
+        One job forever?
+
+        
+
+        That''s
+        an insane choice to have to make.
+
+        
+
+        I''m relieved. Now
+        we only have to make one decision in life.
+
+        
+
+        But, Adam,
+        how could they never have told us that?
+
+        
+
+        Why would you
+        question anything? We''re bees.
+
+        
+
+        We''re the most perfectly
+        functioning society on Earth.
+
+        
+
+        You ever think maybe things
+        work a little too well here?
+
+        
+
+        Like what? Give me one
+        example.
+
+        
+
+        I don''t know. But you know what I''m talking
+        about.
+
+        
+
+        Please clear the gate. Royal Nectar Force on
+        approach.
+
+        
+
+        Wait a second. Check it out.
+
+        
+
+        Hey,
+        those are Pollen Jocks!
+
+        
+
+        Wow.
+
+        
+
+        I''ve
+        never seen them this close.
+
+        
+
+        They know what it''s like
+        outside The Hive.
+
+        
+
+        Yeah, but some don''t come back.
+
+        
+
+        Hey,
+        Jocks!
+
+        
+
+        Hi, Jocks!
+
+        
+
+        You guys did
+        great!
+
+        
+
+        You''re monsters!
+
+        
+
+        You''re
+        sky freaks! I love it! I love it!
+
+        
+
+        I wonder where they
+        were.
+
+        
+
+        I don''t know.
+
+        
+
+        Their day''s
+        not planned.
+
+        
+
+        Outside The Hive, flying who knows where,
+        doing who knows what.
+
+        
+
+        You can''t just decide to be a
+        Pollen Jock. You have to be bred for that.
+
+        
+
+        Right.
+
+        
+
+        Look.
+        That''s more pollen than you and I will see in a lifetime.
+
+        
+
+        It''s
+        just a status symbol.
+
+        
+
+        Bees make too much of it.
+
+        
+
+        Perhaps.
+        Unless you''re wearing it and the ladies see you wearing it.
+
+        
+
+        Those
+        ladies?
+
+        
+
+        Aren''t they our cousins too?
+
+        
+
+        Distant.
+        Distant.
+
+        
+
+        Look at these two.
+
+        
+
+        Couple
+        of Hive Harrys.
+
+        
+
+        Let''s have fun with them.
+
+        
+
+        It
+        must be dangerous being a Pollen Jock.
+
+        
+
+        Yeah. Once a
+        bear pinned me against a mushroom!
+
+        
+
+        He had a paw on my
+        throat, and with the other, he was slapping me!
+
+        
+
+        Oh,
+        my!
+
+        
+
+        I never thought I''d knock him out.
+
+        
+
+        What
+        were you doing during this?
+
+        
+
+        Trying to alert the authorities.
+
+        
+
+        I
+        can autograph that.
+
+        
+
+        A little gusty out there today,
+        wasn''t it, comrades?
+
+        
+
+        Yeah. Gusty.
+
+        
+
+        We''re
+        hitting a sunflower patch six miles from here tomorrow.
+
+        
+
+        Six
+        miles, huh?
+
+        
+
+        Barry!
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 585120761, guid: 7ed0ddb0146cf3847bb312c9adceb667, type: 3}
+      propertyPath: picturesTaken
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 585120761, guid: 7ed0ddb0146cf3847bb312c9adceb667, type: 3}
       propertyPath: inventoryPanel
       value: 
@@ -9119,10 +9758,18 @@ PrefabInstance:
       propertyPath: inventoryPhotos.Array.data[9]
       value: 
       objectReference: {fileID: 2088275395}
+    - target: {fileID: 1220924661, guid: 7ed0ddb0146cf3847bb312c9adceb667, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220924661, guid: 7ed0ddb0146cf3847bb312c9adceb667, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1938831662853500358, guid: 7ed0ddb0146cf3847bb312c9adceb667,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1938831662853500358, guid: 7ed0ddb0146cf3847bb312c9adceb667,
         type: 3}
@@ -9550,6 +10197,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -188.8
       objectReference: {fileID: 0}
+    - target: {fileID: 2967744473888224412, guid: 6ad4c1248a95a2c46b960139892c560c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 3232391100248106701, guid: 6ad4c1248a95a2c46b960139892c560c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9618,7 +10270,7 @@ PrefabInstance:
     - target: {fileID: 3533561164073606398, guid: 6ad4c1248a95a2c46b960139892c560c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3533561164073606398, guid: 6ad4c1248a95a2c46b960139892c560c,
         type: 3}
@@ -10235,6 +10887,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 159.519
       objectReference: {fileID: 0}
+    - target: {fileID: 5657162420609963135, guid: 6ad4c1248a95a2c46b960139892c560c,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 146.69998
+      objectReference: {fileID: 0}
+    - target: {fileID: 5657162420609963135, guid: 6ad4c1248a95a2c46b960139892c560c,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 201.49998
+      objectReference: {fileID: 0}
+    - target: {fileID: 5657162420609963135, guid: 6ad4c1248a95a2c46b960139892c560c,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 45.67129
+      objectReference: {fileID: 0}
+    - target: {fileID: 5657162420609963135, guid: 6ad4c1248a95a2c46b960139892c560c,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.99999905
+      objectReference: {fileID: 0}
+    - target: {fileID: 5657162420609963135, guid: 6ad4c1248a95a2c46b960139892c560c,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.99999905
+      objectReference: {fileID: 0}
+    - target: {fileID: 5657162420609963135, guid: 6ad4c1248a95a2c46b960139892c560c,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -5.3656487
+      objectReference: {fileID: 0}
     - target: {fileID: 5676738139628958184, guid: 6ad4c1248a95a2c46b960139892c560c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10525,6 +11207,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 89.225
       objectReference: {fileID: 0}
+    - target: {fileID: 8481092923805325707, guid: 6ad4c1248a95a2c46b960139892c560c,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 146.69998
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481092923805325707, guid: 6ad4c1248a95a2c46b960139892c560c,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 201.49998
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481092923805325707, guid: 6ad4c1248a95a2c46b960139892c560c,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 54.1083
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481092923805325707, guid: 6ad4c1248a95a2c46b960139892c560c,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.99999905
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481092923805325707, guid: 6ad4c1248a95a2c46b960139892c560c,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.99999905
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481092923805325707, guid: 6ad4c1248a95a2c46b960139892c560c,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 11.584157
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481092923805325707, guid: 6ad4c1248a95a2c46b960139892c560c,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8667093678641101084, guid: 6ad4c1248a95a2c46b960139892c560c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10577,6 +11294,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ad4c1248a95a2c46b960139892c560c, type: 3}
+--- !u!1001 &3917151651471754618
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3917151650547606892, guid: 37a510cbfc010e148a746c82f33100ce,
+        type: 3}
+      propertyPath: m_Name
+      value: Gate Opening
+      objectReference: {fileID: 0}
+    - target: {fileID: 3917151650547606893, guid: 37a510cbfc010e148a746c82f33100ce,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 3917151650547606893, guid: 37a510cbfc010e148a746c82f33100ce,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.082
+      objectReference: {fileID: 0}
+    - target: {fileID: 3917151650547606893, guid: 37a510cbfc010e148a746c82f33100ce,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 3917151650547606893, guid: 37a510cbfc010e148a746c82f33100ce,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -216.618
+      objectReference: {fileID: 0}
+    - target: {fileID: 3917151650547606893, guid: 37a510cbfc010e148a746c82f33100ce,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3917151650547606893, guid: 37a510cbfc010e148a746c82f33100ce,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3917151650547606893, guid: 37a510cbfc010e148a746c82f33100ce,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3917151650547606893, guid: 37a510cbfc010e148a746c82f33100ce,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3917151650547606893, guid: 37a510cbfc010e148a746c82f33100ce,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3917151650547606893, guid: 37a510cbfc010e148a746c82f33100ce,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3917151650547606893, guid: 37a510cbfc010e148a746c82f33100ce,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 37a510cbfc010e148a746c82f33100ce, type: 3}
 --- !u!1001 &5561139643828910381
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10602,7 +11388,7 @@ PrefabInstance:
     - target: {fileID: 6791129047211758021, guid: ac9b6f93ba6ca764c9fde2f8da6b06aa,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6791129047211758021, guid: ac9b6f93ba6ca764c9fde2f8da6b06aa,
         type: 3}
@@ -10887,7 +11673,7 @@ PrefabInstance:
     - target: {fileID: 3339948652222018022, guid: 5212a330dad5b354795ca44ce49bf0c4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3339948652222018022, guid: 5212a330dad5b354795ca44ce49bf0c4,
         type: 3}
@@ -12255,7 +13041,7 @@ PrefabInstance:
     - target: {fileID: 5873863669839950395, guid: 51a476bdeca7ea7489643e7dded9bdb8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5873863669839950395, guid: 51a476bdeca7ea7489643e7dded9bdb8,
         type: 3}
