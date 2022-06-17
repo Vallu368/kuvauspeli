@@ -76,6 +76,10 @@ namespace StarterAssets
 		private float _standingHeight = 2f;
 		private bool _crouched;
 
+		//audio stuff
+		private AudioSource askeleet;
+		private bool askeleetEnabled;
+
 	
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 		private PlayerInput _playerInput;
@@ -107,6 +111,8 @@ namespace StarterAssets
 			{
 				_mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
 			}
+
+			askeleet = GetComponent<AudioSource>();
 		}
 
 		private void Start()
@@ -130,7 +136,22 @@ namespace StarterAssets
 			GroundedCheck();
 			Move();
 			Crouching();
-			//Debug.Log(Grounded);
+            //Debug.Log(Grounded);
+
+			//if(Input.GetAxis("Vertical") < 0 || Input.GetAxis("Vertical") > 0 || Input.GetAxis("Horizontal") > 0 || Input.GetAxis("Horizontal") < 0)
+   //         {
+			//	askeleetEnabled = true;
+			//} else askeleetEnabled = false;
+
+			//if(askeleetEnabled && !askeleet.isPlaying)
+   //         {
+			//	askeleet.Play();
+   //         }
+
+   //         if (!askeleetEnabled)
+   //         {
+			//	askeleet.Stop();
+   //         }
 		}
 
 		private void LateUpdate()

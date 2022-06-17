@@ -9,6 +9,8 @@ TagManager:
   - InteractiveObject
   - InteractWithDoor
   - InteractWithLock
+  - CinemachineTarget
+  - wood
   layers:
   - Default
   - TransparentFX
