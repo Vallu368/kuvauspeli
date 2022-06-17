@@ -9403,10 +9403,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 585120761, guid: 7ed0ddb0146cf3847bb312c9adceb667, type: 3}
-      propertyPath: picturesTaken
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 585120761, guid: 7ed0ddb0146cf3847bb312c9adceb667, type: 3}
       propertyPath: inventoryPanel
       value: 
       objectReference: {fileID: 1374667616197836717}
