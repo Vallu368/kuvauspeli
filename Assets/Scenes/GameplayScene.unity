@@ -9907,6 +9907,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 268759465, guid: 7ed0ddb0146cf3847bb312c9adceb667, type: 3}
+      propertyPath: m_Text
+      value: "Dearest Em,\r\n \r\nI know how hard your life has been and I'm so sorry
+        for not being in it more. \r\nI did always knew we were alike but the rest
+        of the family, well, as you know...\r\nI hope this photo album is something
+        that you could hold on to knowing that you were never alone.\r\n\r\nLove,
+        Grandma"
+      objectReference: {fileID: 0}
+    - target: {fileID: 585120761, guid: 7ed0ddb0146cf3847bb312c9adceb667, type: 3}
+      propertyPath: picturesTaken
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 585120761, guid: 7ed0ddb0146cf3847bb312c9adceb667, type: 3}
       propertyPath: inventoryPanel
       value: 
