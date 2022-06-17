@@ -1374,6 +1374,7 @@ Transform:
   - {fileID: 21390072383704674}
   - {fileID: 8833820879025174677}
   - {fileID: 576075333350767198}
+  - {fileID: 1068790791280554066}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9086,6 +9087,96 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3807103754388956528, guid: 77a9833d42e35af479ab93a47ab61726,
     type: 3}
   m_PrefabInstance: {fileID: 674859006631405409}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &675437632141989817
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3533561164073606398}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ffb3b48fa5d7b07499cbacab25457f7e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1346
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffb3b48fa5d7b07499cbacab25457f7e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 117.68
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffb3b48fa5d7b07499cbacab25457f7e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 117.67999
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffb3b48fa5d7b07499cbacab25457f7e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 117.679985
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffb3b48fa5d7b07499cbacab25457f7e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 118.83
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffb3b48fa5d7b07499cbacab25457f7e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.05
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffb3b48fa5d7b07499cbacab25457f7e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -88.52
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffb3b48fa5d7b07499cbacab25457f7e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.57203525
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffb3b48fa5d7b07499cbacab25457f7e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.6364067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffb3b48fa5d7b07499cbacab25457f7e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.384843
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffb3b48fa5d7b07499cbacab25457f7e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.34591642
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffb3b48fa5d7b07499cbacab25457f7e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -96.098
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffb3b48fa5d7b07499cbacab25457f7e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffb3b48fa5d7b07499cbacab25457f7e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 62.323997
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ffb3b48fa5d7b07499cbacab25457f7e,
+        type: 3}
+      propertyPath: m_Name
+      value: Marko
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ffb3b48fa5d7b07499cbacab25457f7e, type: 3}
+--- !u!4 &1068790791280554066 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ffb3b48fa5d7b07499cbacab25457f7e,
+    type: 3}
+  m_PrefabInstance: {fileID: 675437632141989817}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &676539915289527204
 PrefabInstance:
