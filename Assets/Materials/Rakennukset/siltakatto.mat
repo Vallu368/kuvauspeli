@@ -106,7 +106,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _Tile: -53.5
+    - _Tile: 1
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
