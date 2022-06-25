@@ -48,8 +48,8 @@ public class TimeController : MonoBehaviour
 		sunriseTime = TimeSpan.FromHours(sunriseHour);
 		sunsetTime = TimeSpan.FromHours(sunsetHour);
 
-		//sunLight = GameObject.Find("Visuals/Sun Light").GetComponent<Light>();
-		//moonLight = GameObject.Find("Visuals/Moon Light").GetComponent<Light>();
+		//sunLight = GameObject.Find("Visuals/Sun Light").GetComponent<Light>(); //using serialized reference in favor of GameObject.Find
+		//moonLight = GameObject.Find("Visuals/Moon Light").GetComponent<Light>(); //using serialized reference in favor of GameObject.Find
 	}
 	void Update()
 	{

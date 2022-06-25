@@ -4,37 +4,37 @@ using UnityEngine;
 
 public class GateOpening : MonoBehaviour
 {
-    private InventoryScript inv;
-    public int PicturesNeededToUse;
-    private Animator leftAnimator;
-    private Animator rightAnimator;
-    [SerializeField] GameObject forLeftAnimator;
-    [SerializeField] GameObject forRightAnimator;
+	[SerializeField] private InventoryScript inv;
+	public int PicturesNeededToUse;
+	private Animator leftAnimator;
+	private Animator rightAnimator;
+	[SerializeField] GameObject forLeftAnimator;
+	[SerializeField] GameObject forRightAnimator;
 
-    private void Awake()
-    {
-        leftAnimator = forLeftAnimator.GetComponent<Animator>();
-        rightAnimator = forRightAnimator.GetComponent<Animator>();
-    }
+	private void Awake()
+	{
+		leftAnimator = forLeftAnimator.GetComponent<Animator>();
+		rightAnimator = forRightAnimator.GetComponent<Animator>();
+	}
 
-    void Start()
-    {
-        inv = GameObject.Find("Player/Bruh").GetComponent<InventoryScript>();
-        
-    }
+	void Start()
+	{
+		//inv = GameObject.Find("Player/Bruh").GetComponent<InventoryScript>(); //using serialized reference in favor of GameObject.Find
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.name == "Test")
-        {
-            if (inv.picturesTaken >= PicturesNeededToUse)
-            {
-                leftAnimator.Play("vasenPorttiAuki", 0, 0.0f);
-                rightAnimator.Play("oikeePorttiAuki", 0, 0.0f);
-            }
-            else Debug.Log("not enough pics");
-        }
-    }
+	}
+
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other.gameObject.name == "Test")
+		{
+			if (inv.picturesTaken >= PicturesNeededToUse)
+			{
+				leftAnimator.Play("vasenPorttiAuki", 0, 0.0f);
+				rightAnimator.Play("oikeePorttiAuki", 0, 0.0f);
+			}
+			else Debug.Log("not enough pics");
+		}
+	}
 
 
 }

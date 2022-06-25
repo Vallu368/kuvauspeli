@@ -80,7 +80,7 @@ namespace StarterAssets
 		private AudioSource askeleet;
 		private bool askeleetEnabled;
 
-	
+
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 		private PlayerInput _playerInput;
 #endif
@@ -96,11 +96,11 @@ namespace StarterAssets
 		{
 			get
 			{
-				#if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
+#if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 				return _playerInput.currentControlScheme == "KeyboardMouse";
-				#else
+#else
 				return false;
-				#endif
+#endif
 			}
 		}
 
@@ -109,7 +109,7 @@ namespace StarterAssets
 			// get a reference to our main camera
 			if (_mainCamera == null)
 			{
-				_mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+				_mainCamera = Camera.main.gameObject;
 			}
 
 			askeleet = GetComponent<AudioSource>();
@@ -136,22 +136,22 @@ namespace StarterAssets
 			GroundedCheck();
 			Move();
 			Crouching();
-            //Debug.Log(Grounded);
+			//Debug.Log(Grounded);
 
 			//if(Input.GetAxis("Vertical") < 0 || Input.GetAxis("Vertical") > 0 || Input.GetAxis("Horizontal") > 0 || Input.GetAxis("Horizontal") < 0)
-   //         {
+			//         {
 			//	askeleetEnabled = true;
 			//} else askeleetEnabled = false;
 
 			//if(askeleetEnabled && !askeleet.isPlaying)
-   //         {
+			//         {
 			//	askeleet.Play();
-   //         }
+			//         }
 
-   //         if (!askeleetEnabled)
-   //         {
+			//         if (!askeleetEnabled)
+			//         {
 			//	askeleet.Stop();
-   //         }
+			//         }
 		}
 
 		private void LateUpdate()
@@ -173,7 +173,7 @@ namespace StarterAssets
 			{
 				//Don't multiply mouse input by Time.deltaTime
 				float deltaTimeMultiplier = IsCurrentDeviceMouse ? 1.0f : Time.deltaTime;
-				
+
 				_cinemachineTargetPitch += _input.look.y * RotationSpeed * deltaTimeMultiplier;
 				_rotationVelocity = _input.look.x * RotationSpeed * deltaTimeMultiplier;
 
@@ -194,12 +194,12 @@ namespace StarterAssets
 			//float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
 			float targetSpeed;
 
-			if(_input.sprint)
+			if (_input.sprint)
 			{
 				targetSpeed = SprintSpeed;
 				_crouched = false;
 			}
-			else if(_input.crouch)
+			else if (_input.crouch)
 			{
 				targetSpeed = CrouchSpeed;
 				_crouched = true;
@@ -303,30 +303,30 @@ namespace StarterAssets
 
 		void Crouching()
 		{
-			if(_crouched)
+			if (_crouched)
 			{
-				_controller.height = Mathf.MoveTowards( _controller.height, CrouchHeight, CrouchMaxDistanceDelta * Time.deltaTime);
+				_controller.height = Mathf.MoveTowards(_controller.height, CrouchHeight, CrouchMaxDistanceDelta * Time.deltaTime);
 				//_controller.center.y set to half CrouchHeight + 1f, but no less than -0.5f, this keeps height and center in sync in relation to ground
-				_controller.center = Vector3.MoveTowards(_controller.center, 
+				_controller.center = Vector3.MoveTowards(_controller.center,
 					new Vector3(
-						0f, Mathf.Max(0.5f * CrouchHeight - 1f, -0.5f), 0f), 
+						0f, Mathf.Max(0.5f * CrouchHeight - 1f, -0.5f), 0f),
 					CrouchMaxDistanceDelta * Time.deltaTime);
-				CinemachineCameraTarget.transform.position = Vector3.MoveTowards(CinemachineCameraTarget.transform.position, 
+				CinemachineCameraTarget.transform.position = Vector3.MoveTowards(CinemachineCameraTarget.transform.position,
 					new Vector3(
-						CameraOffsetTransform.position.x, 
-						CameraOffsetTransform.position.y -.7f, 
-						CameraOffsetTransform.position.z), 
+						CameraOffsetTransform.position.x,
+						CameraOffsetTransform.position.y - .7f,
+						CameraOffsetTransform.position.z),
 					CrouchMaxDistanceDelta * Time.deltaTime);
 			}
 			else
 			{
-				_controller.height = Mathf.MoveTowards( _controller.height, _standingHeight, CrouchMaxDistanceDelta * Time.deltaTime);
-				_controller.center = Vector3.MoveTowards(_controller.center, 
-					Vector3.zero, 
+				_controller.height = Mathf.MoveTowards(_controller.height, _standingHeight, CrouchMaxDistanceDelta * Time.deltaTime);
+				_controller.center = Vector3.MoveTowards(_controller.center,
+					Vector3.zero,
 					CrouchMaxDistanceDelta * Time.deltaTime);
 				CinemachineCameraTarget.transform.position = Vector3.MoveTowards(
-					CinemachineCameraTarget.transform.position, 
-					CameraOffsetTransform.position, 
+					CinemachineCameraTarget.transform.position,
+					CameraOffsetTransform.position,
 					CrouchMaxDistanceDelta * Time.deltaTime);
 			}
 		}

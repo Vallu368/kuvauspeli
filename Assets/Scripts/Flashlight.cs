@@ -4,34 +4,34 @@ using UnityEngine;
 public class Flashlight : MonoBehaviour
 {
 
-    public GameObject cam;
-    public GameObject light;
-    public bool isActive = false;
-    void Start()
-    {
-        cam = GameObject.Find("Player/Bruh/CameraPosition");
-        light = GameObject.Find("Player/Flashlight");
-        light.SetActive(false);
-    }
+	public GameObject cam;
+	public GameObject flashLight;
+	public bool isActive = false;
+	void Start()
+	{
+		cam = GameObject.Find("Player/Bruh/CameraPosition");
+		flashLight = GameObject.Find("Player/Flashlight");
+		flashLight.SetActive(false);
+	}
 
-    // Update is called once per frame
-    void Update()
-    {
-        light.transform.rotation = cam.transform.rotation;
-        light.transform.position = cam.transform.position;
-        if (Input.GetKeyDown("f")) 
-        {
-            if (!isActive)
-            {
-                light.SetActive(true);
-                isActive = true;
-            }
-            else
-            {
-                light.SetActive(false);
-                isActive = false;
-            }
-        }
-    }
+	// Update is called once per frame
+	void Update()
+	{
+		flashLight.transform.rotation = cam.transform.rotation;
+		flashLight.transform.position = cam.transform.position;
+		if (Input.GetKeyDown("f"))
+		{
+			if (!isActive)
+			{
+				flashLight.SetActive(true);
+				isActive = true;
+			}
+			else
+			{
+				flashLight.SetActive(false);
+				isActive = false;
+			}
+		}
+	}
 
 }
